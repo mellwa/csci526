@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
-public class Wave
+public class Wave2
 {
-	public GameObject enemyPrefab;
+	public GameObject allyPrefab;
 	public float spawnInterval = 2;
-	public int maxEnemies = 20;
+	public int maxAlly = 20;
 }
 
-public class SpawnEmeny : MonoBehaviour {
+public class SpawnAllies : MonoBehaviour {
 	public GameObject[] waypoints;
-	public GameObject testEnemyPrefab;
-	public Wave[] waves;
+	//public GameObject testEnemyPrefab;
+	public Wave2[] waves;
 	public int timeBetweenWaves = 5;
 
 	private GameManagerBehavior gameManager;
 
 	private float lastSpawnTime;
-	private int enemiesSpawned = 0;
+	private int alliesSpawned = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -31,30 +31,30 @@ public class SpawnEmeny : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// 1
-		int currentWave = gameManager.Wave;
+		int currentWave = gameManager.Wave2;
 		if (currentWave < waves.Length)
 		{
 		// 2
 		float timeInterval = Time.time - lastSpawnTime;
 		float spawnInterval = waves[currentWave].spawnInterval;
-		if (((enemiesSpawned == 0 && timeInterval > timeBetweenWaves) ||
+		if (((alliesSpawned == 0 && timeInterval > timeBetweenWaves) ||
 			timeInterval > spawnInterval) && 
-		enemiesSpawned < waves[currentWave].maxEnemies)
+		alliesSpawned < waves[currentWave].maxAlly)
 		{
     	// 3  
     	lastSpawnTime = Time.time;
-    	GameObject newEnemy = (GameObject)
-    	Instantiate(waves[currentWave].enemyPrefab);
-    	newEnemy.GetComponent<MoveEnemy>().waypoints = waypoints;
-    	enemiesSpawned++;
+    	GameObject newAlly = (GameObject)
+    	Instantiate(waves[currentWave].allyPrefab);
+    	newAlly.GetComponent<MoveAllies>().waypoints = waypoints;
+    	alliesSpawned++;
     }
     	// 4 
-    	if (enemiesSpawned == waves[currentWave].maxEnemies &&
-    		GameObject.FindGameObjectWithTag("Enemy") == null)
+    	if (alliesSpawned == waves[currentWave].maxAlly &&
+    		GameObject.FindGameObjectWithTag("Ally") == null)
     	{
-    		gameManager.Wave++;
+    		gameManager.Wave2++;
     		//gameManager.Gold = Mathf.RoundToInt(gameManager.Gold * 1.1f);
-    		enemiesSpawned = 0;
+    		alliesSpawned = 0;
     		lastSpawnTime = Time.time;
     	}  
     	// 5 

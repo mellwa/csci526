@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveEnemy : MonoBehaviour {
+public class MoveAllies : MonoBehaviour {
 
 public GameObject[] waypoints;
 private int currentWaypoint = 0;
@@ -44,7 +44,7 @@ void Update () {
       AudioSource audioSource = gameObject.GetComponent<AudioSource>();
       AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
       GameManagerBehavior gameManager = GameObject.Find("GameManager").GetComponent<GameManagerBehavior>();
-      gameManager.Health -= 1;
+      gameManager.Gold += 100;
     }
   }
 }
