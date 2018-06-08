@@ -2,40 +2,44 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaceMonster : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}
-
-public GameObject monsterPrefab;
-private GameObject monster;
-
-private bool CanPlaceMonster()
+public class PlaceMonster : MonoBehaviour
 {
-    return monster == null;
-}
+    public GameObject monsterPrefab;
+    private GameObject monster;
 
-//1
-void OnMouseUp()
-{
-    //2
-    if (CanPlaceMonster())
+
+    // Use this for initialization
+    void Start()
     {
-        //3
-        monster = (GameObject)
-          Instantiate(monsterPrefab, transform.position, Quaternion.identity);
-        //4
-        AudioSource audioSource = gameObject.GetComponent<AudioSource>();
-        audioSource.PlayOneShot(audioSource.clip);
 
-        // TODO: Deduct gold
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    private bool CanPlaceMonster()
+    {
+        return monster == null;
+    }
+
+    //1
+    void OnMouseUp()
+    {
+        //2
+        if (CanPlaceMonster())
+        {
+            //3
+            monster = (GameObject)
+              Instantiate(monsterPrefab, transform.position, Quaternion.identity);
+            //4
+            AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+            audioSource.PlayOneShot(audioSource.clip);
+
+            // TODO: Deduct gold
+        }
     }
 }
