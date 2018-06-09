@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveAllies : MonoBehaviour {
+public class MoveEnemy : MonoBehaviour {
 
 public GameObject[] waypoints;
 private int currentWaypoint = 0;
 private float lastWaypointSwitchTime;
 public float speed = 1.0f;
-
+    public Transform Healthtrans;
 	// Use this for initialization
 void Start () {
 	lastWaypointSwitchTime = Time.time;
@@ -26,6 +26,12 @@ void Update () {
   float currentTimeOnPath = Time.time - lastWaypointSwitchTime;
   gameObject.transform.position = Vector2.Lerp (startPosition, endPosition, currentTimeOnPath / totalTimeForPath);
   // 3 
+        // Kejin modify:
+        if (Healthtrans.localScale.x < 0)
+        {
+            Destroy(gameObject);
+        }
+        //kejin end
   if (gameObject.transform.position.Equals(endPosition)) 
   {
     if (currentWaypoint < waypoints.Length - 2)
@@ -44,7 +50,7 @@ void Update () {
       AudioSource audioSource = gameObject.GetComponent<AudioSource>();
       AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
       GameManagerBehavior gameManager = GameObject.Find("GameManager").GetComponent<GameManagerBehavior>();
-      gameManager.Gold += 100;
+      gameManager.Health -= 1;
     }
   }
 }

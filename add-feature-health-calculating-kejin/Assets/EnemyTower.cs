@@ -15,7 +15,7 @@ public class EnemyTower : MonoBehaviour
     public Transform parttorotate;
     public GameObject bulletprefab;
     public Transform firepoint;
-
+    GameObject nearestenemy = null;
     // Use this for initialization
     void Start()
     {
@@ -28,7 +28,7 @@ public class EnemyTower : MonoBehaviour
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemytag);
         float shortesdistoenemy = Mathf.Infinity;
-        GameObject nearestenemy = null;
+
         foreach (GameObject enemy in enemies)
         {
             float distancetoenemy = Vector2.Distance(transform.position, enemy.transform.position);
@@ -51,8 +51,11 @@ public class EnemyTower : MonoBehaviour
         }
         Vector3 dir = target.position - transform.position;
         Quaternion lookrotation = Quaternion.LookRotation(dir);
+        // Vector3 rotation = Vector3.RotateTowards(parttorotate.forward, dir, Time.deltaTime * turnspeed, 0.0f);
         Vector3 rotation = Quaternion.Lerp(parttorotate.rotation, lookrotation, Time.deltaTime * turnspeed).eulerAngles;
         parttorotate.rotation = Quaternion.Euler(0f, 0f, rotation.z);
+        //Debug.Log("rotationz :" + rotation.z+"  tagert: "+target.rotation.z+"  trans : "+parttorotate.rotation.z+" tower:"+transform.rotation.z);
+        //Debug.Log("look rotation: " + parttorotate.rotation.z);
         if (firecountdown <= 0f)
         {
             Shoot();
@@ -62,12 +65,13 @@ public class EnemyTower : MonoBehaviour
     }
     void Shoot()
     {
-        Debug.Log("shoot!");
+        //Debug.Log("shoot!");
         GameObject bulletgo = (GameObject)Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
         Bullet bullet = bulletgo.GetComponent<Bullet>();
         if (bullet != null)
         {
-            bullet.Seek(target);
+            //bullet.Seek(target);
+            bullet.Seekenemy(nearestenemy);
         }
 
     }
