@@ -13,6 +13,8 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Text healthLabel;
 	public GameObject[] healthIndicator;
 	private int health;
+	public int towerType;
+
 	public int Health
 	{
 	  get
@@ -71,6 +73,19 @@ public class GameManagerBehavior : MonoBehaviour {
 		}
 	}
 
+	public int TowerType
+	{
+		get
+		{
+			return towerType;
+		}
+		set
+		{
+		towerType = value;
+			
+		}
+	}
+
 	public int Wave2
 	{
 		get
@@ -110,8 +125,9 @@ public class GameManagerBehavior : MonoBehaviour {
 	void Start () {
 		Wave = 0;
 		Wave2 = 0;
-		Gold = 1000;
+		Gold = 800;
 		Health = 5;
+		TowerType= 0; //no tower is selected
 		
 	}
 	
