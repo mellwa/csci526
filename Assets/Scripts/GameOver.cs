@@ -31,13 +31,22 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
+	void Start () {
+		Text btn = this.GetComponent<Text> ();
+        //btn.onClick.AddListener (OnClick);
+        btn.gameObject.SetActive(false);
+        
+    }
 
     void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
     }
 
 }

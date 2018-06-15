@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ClickHandler : MonoBehaviour {
+public class ChooseLevelTwo : MonoBehaviour {
 
     void Start () {
         Button btn = this.GetComponent<Button> ();
@@ -11,9 +11,7 @@ public class ClickHandler : MonoBehaviour {
     }
 
     private void OnClick(){
-        Debug.Log ("Button Clicked. ClickHandler.");
-        GameManagerBehavior gameManager = GameObject.Find("GameManager").GetComponent<GameManagerBehavior>();
-      	gameManager.TowerType = 1;
+        //Debug.Log ("Button Clicked. ClickHandler.");
+        Application.LoadLevel(2);
     }
-
 }
