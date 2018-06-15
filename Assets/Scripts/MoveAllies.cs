@@ -32,7 +32,8 @@ void Update () {
             Destroy(gameObject);
         }
         //kejin end
-  if (gameObject.transform.position.Equals(endPosition)) 
+  if (Vector3.Distance(gameObject.transform.position, endPosition) < 0.1f)
+  //if (gameObject.transform.position.Equals(endPosition)) 
   {
     if (currentWaypoint < waypoints.Length - 2)
     {
