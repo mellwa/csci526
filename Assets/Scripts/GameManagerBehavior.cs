@@ -6,6 +6,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Text waveLabel;
 	public GameObject[] nextWaveLabels;
 	public Text goldLabel;
+	public Text gameOverText;
 	private int gold;
 	public bool gameOver = false;
 	private int wave;
@@ -14,6 +15,8 @@ public class GameManagerBehavior : MonoBehaviour {
 	public GameObject[] healthIndicator;
 	private int health;
 	public int towerType;
+	public Button Replay;
+	public Button BackToMenu;
 
 	public int Health
 	{
@@ -35,8 +38,12 @@ public class GameManagerBehavior : MonoBehaviour {
 	    if (health <= 0 && !gameOver)
 	    {
 	      gameOver = true;
-	      GameObject gameOverText = GameObject.FindGameObjectWithTag("GameOver");
-	      gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
+	      //GameObject gameOverText = GameObject.FindGameObjectWithTag("GameOver");
+	      // gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
+	      gameOverText.gameObject.SetActive(true);
+	      BackToMenu.gameObject.SetActive(true);
+	      Replay.gameObject.SetActive(true);
+	      Time.timeScale = 0;
 	    }
 	    // 4 
 	    for (int i = 0; i < healthIndicator.Length; i++)
@@ -126,7 +133,7 @@ public class GameManagerBehavior : MonoBehaviour {
 		Wave = 0;
 		Wave2 = 0;
 		Gold = 800;
-		Health = 5;
+		Health = 1;
 		TowerType= 0; //no tower is selected
 		
 	}
