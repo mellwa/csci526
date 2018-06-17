@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_0395
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: a81f807e940b47141b4daf52003950f9, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0.4873047
+    y: 0.6850586
+    width: 0.06738281
+    height: 0.09667969
+  - serializedVersion: 2
+    x: 0.31298828
+    y: 0.25634766
+    width: 0.24658203
+    height: 0.26171875
+  - serializedVersion: 2
+    x: 0.31298828
+    y: 0.8769531
+    width: 0.088378906
+    height: 0.099121094
+  - serializedVersion: 2
+    x: 0
+    y: 0.68652344
+    width: 0.2836914
+    height: 0.29785156
+  - serializedVersion: 2
+    x: 0.26123047
+    y: 0.36083984
+    width: 0.048339844
+    height: 0.053710938
+  - serializedVersion: 2
+    x: 0.9165039
+    y: 0.4248047
+    width: 0.07373047
+    height: 0.07910156
+  - serializedVersion: 2
+    x: 0.8198242
+    y: 0.25634766
+    width: 0.096191406
+    height: 0.25683594
+  - serializedVersion: 2
+    x: 0.9165039
+    y: 0.25634766
+    width: 0.07861328
+    height: 0.16796875
+  - serializedVersion: 2
+    x: 0.31298828
+    y: 0.6538086
+    width: 0.09472656
+    height: 0.22265625
+  - serializedVersion: 2
+    x: 0.71191406
+    y: 0.25634766
+    width: 0.107421875
+    height: 0.24951172
+  - serializedVersion: 2
+    x: 0.5942383
+    y: 0
+    width: 0.1977539
+    height: 0.23095703
+  - serializedVersion: 2
+    x: 0.40185547
+    y: 0.8769531
+    width: 0.06982422
+    height: 0.09814453
+  - serializedVersion: 2
+    x: 0.79248047
+    y: 0
+    width: 0.17578125
+    height: 0.1899414
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.3125
+    height: 0.36035156
+  - serializedVersion: 2
+    x: 0
+    y: 0.36083984
+    width: 0.2607422
+    height: 0.3251953
+  - serializedVersion: 2
+    x: 0.26123047
+    y: 0.41503906
+    width: 0.045410156
+    height: 0.052246094
+  - serializedVersion: 2
+    x: 0.40820312
+    y: 0.6538086
+    width: 0.07373047
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0.31298828
+    y: 0
+    width: 0.28076172
+    height: 0.25585938
+  - serializedVersion: 2
+    x: 0.4873047
+    y: 0.5185547
+    width: 0.095703125
+    height: 0.16601562
+  - serializedVersion: 2
+    x: 0.31298828
+    y: 0.5185547
+    width: 0.17382812
+    height: 0.13476562
+  - serializedVersion: 2
+    x: 0.5600586
+    y: 0.25634766
+    width: 0.15136719
+    height: 0.18164062
+  - serializedVersion: 2
+    x: 0.5600586
+    y: 0.43847656
+    width: 0.10644531
+    height: 0.067871094
+  textureGUIDs:
+  - 01e55e654bdfb4a42a041ffe1b2abbc4
+  - 1533f102e1c69f0488e68b755d7e1c53
+  - 1bba80ece65652d4f9905dd3d3cdd259
+  - 222d265926b2e084782c4eb10a0ba5b8
+  - 2715a7a05752035489fbaa88dba815e5
+  - 288239cce914e904a9bf7522e1b38b38
+  - 3430cfb21723e63448f1523220eb860c
+  - 47eae8e4fbe7aed40a57ef5eedc868fb
+  - 4a7e98a347eb27d41a411a2fd08527e9
+  - 4cfb0a857f17b9b499e2a7838937a22b
+  - 53b84c58c7bf1aa4699a4ca570ce943f
+  - 5fae34c9beae58a4abee201b0fb5ff85
+  - 679752c93a2bb904b850a7654080862c
+  - 76f9d4d9252543f43be2f29be6cef9c5
+  - b4a3fe24b5075574d85e68f3b01417e8
+  - c96a050c4dcf089479c32dafca504ad1
+  - cd7eeb2b888ccce45813a9c2c06f3e67
+  - d8947cfcbdd7b894a8d0fd9fea5274d6
+  - e0ebcfdc57e357d4ca6091a240821e87
+  - e3ca6122d06e55640806155d2eec391a
+  - e53e78144946ef94891704c228e5bb2e
+  - ec4057eba532b4247b2a008d4155ce54
+  textureSizes:
+  - {x: 138, y: 198}
+  - {x: 505, y: 536}
+  - {x: 181, y: 203}
+  - {x: 581, y: 610}
+  - {x: 99, y: 110}
+  - {x: 151, y: 162}
+  - {x: 197, y: 526}
+  - {x: 161, y: 344}
+  - {x: 194, y: 456}
+  - {x: 220, y: 511}
+  - {x: 405, y: 473}
+  - {x: 143, y: 201}
+  - {x: 360, y: 389}
+  - {x: 640, y: 738}
+  - {x: 534, y: 666}
+  - {x: 93, y: 107}
+  - {x: 151, y: 272}
+  - {x: 575, y: 524}
+  - {x: 196, y: 340}
+  - {x: 356, y: 276}
+  - {x: 310, y: 372}
+  - {x: 218, y: 139}
+  defaultPivotOffsets:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  textureNames:
+  - 21_rFoot1
+  - 06_uBody
+  - 03_rArm1
+  - 10_shield2
+  - 24_rFoot2
+  - 14_lFoot1
+  - 20_rSLeg1
+  - 16_lSLeg2
+  - 15_lTLeg2
+  - 13_lSLeg1
+  - 19_rTLeg1
+  - 22_rTLeg2
+  - 11_hair
+  - 01_head
+  - 02_spear
+  - 17_lFoot2
+  - 23_rSLeg2
+  - 07_lBody
+  - 12_lTLeg1
+  - 18_hBody
+  - 05_rShoulder
+  - 04_rArm2
+  texturePaths:
+  - Assets/0362_0406/textures/0392_0396/0395/21_rFoot1.png
+  - Assets/0362_0406/textures/0392_0396/0395/06_uBody.png
+  - Assets/0362_0406/textures/0392_0396/0395/03_rArm1.png
+  - Assets/0362_0406/textures/0392_0396/0395/10_shield2.png
+  - Assets/0362_0406/textures/0392_0396/0395/24_rFoot2.png
+  - Assets/0362_0406/textures/0392_0396/0395/14_lFoot1.png
+  - Assets/0362_0406/textures/0392_0396/0395/20_rSLeg1.png
+  - Assets/0362_0406/textures/0392_0396/0395/16_lSLeg2.png
+  - Assets/0362_0406/textures/0392_0396/0395/15_lTLeg2.png
+  - Assets/0362_0406/textures/0392_0396/0395/13_lSLeg1.png
+  - Assets/0362_0406/textures/0392_0396/0395/19_rTLeg1.png
+  - Assets/0362_0406/textures/0392_0396/0395/22_rTLeg2.png
+  - Assets/0362_0406/textures/0392_0396/0395/11_hair.png
+  - Assets/0362_0406/textures/0392_0396/0395/01_head.png
+  - Assets/0362_0406/textures/0392_0396/0395/02_spear.png
+  - Assets/0362_0406/textures/0392_0396/0395/17_lFoot2.png
+  - Assets/0362_0406/textures/0392_0396/0395/23_rSLeg2.png
+  - Assets/0362_0406/textures/0392_0396/0395/07_lBody.png
+  - Assets/0362_0406/textures/0392_0396/0395/12_lTLeg1.png
+  - Assets/0362_0406/textures/0392_0396/0395/18_hBody.png
+  - Assets/0362_0406/textures/0392_0396/0395/05_rShoulder.png
+  - Assets/0362_0406/textures/0392_0396/0395/04_rArm2.png
+  lastBuildID: 20150408114159944
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0

@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_effects_06
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: dc0e081d4e9e1e04e98e7edc6b8cb181, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0
+    y: 0.2709961
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0.7626953
+    y: 0.21875
+    width: 0.09765625
+    height: 0.10498047
+  - serializedVersion: 2
+    x: 0.81640625
+    y: 0
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.66845703
+    width: 0.09375
+    height: 0.09765625
+  - serializedVersion: 2
+    x: 0
+    y: 0.4897461
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.21875
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0.390625
+    y: 0.21875
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0
+    y: 0.7084961
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0.86083984
+    y: 0.21875
+    width: 0.09765625
+    height: 0.10498047
+  - serializedVersion: 2
+    x: 0.6455078
+    y: 0
+    width: 0.17041016
+    height: 0.1772461
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0.51464844
+    y: 0.21875
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0.4560547
+    y: 0
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.26611328
+    height: 0.2705078
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.35205078
+    width: 0.09765625
+    height: 0.10498047
+  - serializedVersion: 2
+    x: 0.6386719
+    y: 0.21875
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.45751953
+    width: 0.09765625
+    height: 0.10498047
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.5629883
+    width: 0.09765625
+    height: 0.10498047
+  textureGUIDs:
+  - 04c637cbfbde2154985e9177b75f2209
+  - 05f96c0e96c787540a6f5c8301b87c11
+  - 061bffe946d7014458308892374b8ad0
+  - 12e34462951e3a44a952ce272ffe81b6
+  - 2811a9d57566f194fb1cb4a491e2fae8
+  - 3954ab09121303744bacf51acd9696c2
+  - 467b080a6beaf3741b4c3f2946815f8c
+  - 480ffb79a35eee74795e0012a61b8bc7
+  - 5ea130e523e06f04fbfe9385dd676a14
+  - 671deeeab6f4b13449f8e725a3ca6ae8
+  - 79c22b4ab5ab1064b810b7bcbba28bbb
+  - 818ba0337d2b6a94b84ee22ee89b9925
+  - 87a8498689d7e0847ad8272d257512a1
+  - 8f9eabdd3f203c1449481f98725e1480
+  - a99f71cfa314fa74aa39b38dbb0f21d7
+  - af29c53e72022c645ba57420f1f86a4c
+  - b91ceacd7598f5c4187224774b1356f7
+  - f070e24d0d84e7e4889c4d87688884f0
+  textureSizes:
+  - {x: 387, y: 447}
+  - {x: 200, y: 215}
+  - {x: 253, y: 272}
+  - {x: 192, y: 200}
+  - {x: 387, y: 447}
+  - {x: 253, y: 272}
+  - {x: 253, y: 272}
+  - {x: 387, y: 447}
+  - {x: 200, y: 215}
+  - {x: 349, y: 363}
+  - {x: 387, y: 447}
+  - {x: 253, y: 272}
+  - {x: 387, y: 447}
+  - {x: 545, y: 554}
+  - {x: 200, y: 215}
+  - {x: 253, y: 272}
+  - {x: 200, y: 215}
+  - {x: 200, y: 215}
+  defaultPivotOffsets:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  textureNames:
+  - 02_effect_fire_02
+  - 02_effect_fire_03
+  - 03_effect_leaf_01
+  - 00_effect_shout_03
+  - 01_effect_water_02
+  - 02_effect_fire_01
+  - 01_effect_water_01
+  - 05_effect_dark_02
+  - 03_effect_leaf_03
+  - 00_effect_shout_02
+  - 04_effect_light_02
+  - 05_effect_dark_01
+  - 03_effect_leaf_02
+  - 00_effect_shout_01
+  - 04_effect_light_03
+  - 04_effect_light_01
+  - 05_effect_dark_03
+  - 01_effect_water_03
+  texturePaths:
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/02_effect_fire_02.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/02_effect_fire_03.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/03_effect_leaf_01.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/00_effect_shout_03.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/01_effect_water_02.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/02_effect_fire_01.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/01_effect_water_01.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/05_effect_dark_02.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/03_effect_leaf_03.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/00_effect_shout_02.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/04_effect_light_02.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/05_effect_dark_01.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/03_effect_leaf_02.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/00_effect_shout_01.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/04_effect_light_03.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/04_effect_light_01.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/05_effect_dark_03.png
+  - Assets/nGardenMonsterPack06/common_source/assets/effects/01_effect_water_03.png
+  lastBuildID: 20161205152405766
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0

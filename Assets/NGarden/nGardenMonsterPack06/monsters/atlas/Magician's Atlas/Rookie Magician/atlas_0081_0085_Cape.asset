@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_0081_0085_Cape
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7f31c9a76e07fe6488317798760c629b, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.45507812
+    height: 0.18115234
+  - serializedVersion: 2
+    x: 0.4560547
+    y: 0
+    width: 0.45507812
+    height: 0.18115234
+  - serializedVersion: 2
+    x: 0
+    y: 0.18164062
+    width: 0.45507812
+    height: 0.18115234
+  - serializedVersion: 2
+    x: 0.4560547
+    y: 0.18164062
+    width: 0.45507812
+    height: 0.18115234
+  - serializedVersion: 2
+    x: 0
+    y: 0.36328125
+    width: 0.45507812
+    height: 0.18115234
+  textureGUIDs:
+  - 43b867c06fd685446aacdc29a487fb21
+  - c17301ba04e4513468fe8f74a67f6df6
+  - 54431bdb6443a8e4085eb833a3674876
+  - e37b1dac67181284685671f1e09c8091
+  - e8133e5e2716aa348b8fc4f21be767fe
+  textureSizes:
+  - {x: 466, y: 371}
+  - {x: 466, y: 371}
+  - {x: 466, y: 371}
+  - {x: 466, y: 371}
+  - {x: 466, y: 371}
+  defaultPivotOffsets:
+  - {x: -0.091071434, y: 0.4171929}
+  - {x: -0.091071434, y: 0.4171929}
+  - {x: -0.091071434, y: 0.4171929}
+  - {x: -0.091071434, y: 0.4171929}
+  - {x: -0.091071434, y: 0.4171929}
+  textureNames:
+  - 0084_Cape
+  - 0082_Cape
+  - 0085_Cape
+  - 0083_Cape
+  - 0081_Cape
+  texturePaths:
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0084/0084_Cape.png
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0082/0082_Cape.png
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0085/0085_Cape.png
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0083/0083_Cape.png
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0081/0081_Cape.png
+  lastBuildID: 20140618122727743
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0

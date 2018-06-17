@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_0086_0090_L_Leg
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: a06df7c13e96f1c41a682acfca4c44d3, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.20019531
+    height: 0.29492188
+  - serializedVersion: 2
+    x: 0
+    y: 0.29589844
+    width: 0.20019531
+    height: 0.29492188
+  - serializedVersion: 2
+    x: 0
+    y: 0.5917969
+    width: 0.20019531
+    height: 0.29492188
+  - serializedVersion: 2
+    x: 0.20117188
+    y: 0
+    width: 0.20019531
+    height: 0.29492188
+  - serializedVersion: 2
+    x: 0.40234375
+    y: 0
+    width: 0.20019531
+    height: 0.29492188
+  textureGUIDs:
+  - 5b6651945331a5245b7887d549be74a7
+  - 41883615b7486ba4396fbbffc01e130c
+  - 1f496f1775b33e1478118af621e3f608
+  - 7b6b69dc806a26444a29fe4f67a5482c
+  - fc001bfd883870c4d9382281a96613ac
+  textureSizes:
+  - {x: 205, y: 302}
+  - {x: 205, y: 302}
+  - {x: 205, y: 302}
+  - {x: 205, y: 302}
+  - {x: 205, y: 302}
+  defaultPivotOffsets:
+  - {x: -0.22619551, y: 0.3129921}
+  - {x: -0.22619551, y: 0.3129921}
+  - {x: -0.22619551, y: 0.3129921}
+  - {x: -0.22619551, y: 0.3129921}
+  - {x: -0.22619551, y: 0.31299213}
+  textureNames:
+  - 0087_L_Leg
+  - 0090_L_Leg
+  - 0088_L_Leg
+  - 0089_L_Leg
+  - 0086_L_Leg
+  texturePaths:
+  - Assets/allDungeon/textures/0001_0100/0086_0090/0087/0087_L_Leg.png
+  - Assets/allDungeon/textures/0001_0100/0086_0090/0090/0090_L_Leg.png
+  - Assets/allDungeon/textures/0001_0100/0086_0090/0088/0088_L_Leg.png
+  - Assets/allDungeon/textures/0001_0100/0086_0090/0089/0089_L_Leg.png
+  - Assets/allDungeon/textures/0001_0100/0086_0090/0086/0086_L_Leg.png
+  lastBuildID: 20140618123930177
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0
