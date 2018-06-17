@@ -7,6 +7,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public GameObject[] nextWaveLabels;
 	public Text goldLabel;
 	public Text gameOverText;
+	public Text gameWonText;
 	private int gold;
 	public bool gameOver = false;
 	private int wave;

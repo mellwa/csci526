@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 [System.Serializable]
 public class Wave
 {
@@ -62,7 +63,10 @@ public class SpawnEmeny : MonoBehaviour {
     else
     {
     	gameManager.gameOver = true;
-    	// GameObject gameOverText = GameObject.FindGameObjectWithTag ("GameWon");
+    	gameManager.gameWonText.gameObject.SetActive(true);
+	    gameManager.BackToMenu.gameObject.SetActive(true);
+	    gameManager.Replay.gameObject.SetActive(true);
+	    Time.timeScale = 0;
     	// gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
     }
 
