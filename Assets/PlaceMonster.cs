@@ -45,26 +45,28 @@ public class PlaceMonster : MonoBehaviour
         //2
         if (CanPlaceMonster())
         {
+            Vector3 myVector = transform.position;
+            myVector.y-=1.5f; 
             GameManagerBehavior gameManager = GameObject.Find("GameManager").GetComponent<GameManagerBehavior>();
             gold = gameManager.Gold;
             //3
             if(gameManager.TowerType==1&&gold>=towerPrice1){
                 monster = (GameObject)
-              Instantiate(monsterPrefab, transform.position, Quaternion.identity);
+              Instantiate(monsterPrefab, myVector, Quaternion.identity);
               AudioSource audioSource = gameObject.GetComponent<AudioSource>();
               audioSource.PlayOneShot(audioSource.clip);
               gameManager.Gold -= towerPrice1;
             }
             if(gameManager.TowerType==2&&gold>=towerPrice2){
                 monster = (GameObject)
-              Instantiate(monsterPrefab2, transform.position, Quaternion.identity);
+              Instantiate(monsterPrefab2, myVector, Quaternion.identity);
               AudioSource audioSource = gameObject.GetComponent<AudioSource>();
               audioSource.PlayOneShot(audioSource.clip);
             gameManager.Gold -= towerPrice2;
             }
             if(gameManager.TowerType==3&&gold>=towerPrice3){
               monster = (GameObject)
-              Instantiate(monsterPrefab3, transform.position, Quaternion.identity);
+              Instantiate(monsterPrefab3, myVector, Quaternion.identity);
               AudioSource audioSource = gameObject.GetComponent<AudioSource>();
               audioSource.PlayOneShot(audioSource.clip);
               gameManager.Gold -= towerPrice3;

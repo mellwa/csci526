@@ -37,9 +37,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4368150904726800}
   - component: {fileID: 212137941991751620}
-  - component: {fileID: 114421127749367102}
+  - component: {fileID: 114609271624198058}
   m_Layer: 0
-  m_Name: Bullets
+  m_Name: WaterBullets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,7 +167,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114421127749367102
+--- !u!114 &114609271624198058
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -175,10 +175,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1281867264817962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dcd2893fd1c843a19a0d7fb6c44674b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cad73443942d8942820b102e2659aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  damage: 40
 --- !u!212 &212137941991751620
 SpriteRenderer:
   m_ObjectHideFlags: 1

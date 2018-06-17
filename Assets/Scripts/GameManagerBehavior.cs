@@ -133,7 +133,7 @@ public class GameManagerBehavior : MonoBehaviour {
 		Wave = 0;
 		Wave2 = 0;
 		Gold = 800;
-		Health = 1;
+		Health = 5;
 		TowerType= 0; //no tower is selected
 		
 	}

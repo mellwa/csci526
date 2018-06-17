@@ -174,11 +174,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170a83cdd02b742e8825d13d0596c27c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 1997753087813936, guid: dd93c17172149544487b06baa74eacbc,
+  monsterPrefab: {fileID: 1269689813952802, guid: 9ad32012d32b25e49af8de8d39cee691,
     type: 2}
-  monsterPrefab2: {fileID: 1101459250659572, guid: c0635d0a3c2a8dc4cad3faf4b9e3e3d9,
+  monsterPrefab2: {fileID: 1997360101287462, guid: e86fa955488e2324789d534a1d884ed8,
     type: 2}
-  monsterPrefab3: {fileID: 1548510529292818, guid: 578e4527e7b06fe4999dee0e741f3402,
+  monsterPrefab3: {fileID: 1422408351744604, guid: 0732912436b5cae47be591336f990b94,
     type: 2}
   goldLabel: {fileID: 0}
   towerPrice1: 0

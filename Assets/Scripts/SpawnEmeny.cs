@@ -61,9 +61,9 @@ public class SpawnEmeny : MonoBehaviour {
     }
     else
     {
-    	//gameManager.gameOver = true;
-    	//GameObject gameOverText = GameObject.FindGameObjectWithTag ("GameWon");
-    	//gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
+    	gameManager.gameOver = true;
+    	// GameObject gameOverText = GameObject.FindGameObjectWithTag ("GameWon");
+    	// gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
     }
 
 }

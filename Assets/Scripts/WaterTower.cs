@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tower : MonoBehaviour
+public class WaterTower : MonoBehaviour
 {
     private Transform target;
     private float firecountdown = 0f;
@@ -12,7 +12,7 @@ public class Tower : MonoBehaviour
     public float firerate = 1f;
     [Header("Setup fields")]
     public string enemytag = "Enemy";
-    public Transform parttorotate;
+    //public Transform parttorotate;
     public GameObject bulletprefab;
     public Transform firepoint;
     GameObject nearestenemy = null;
@@ -49,13 +49,7 @@ public class Tower : MonoBehaviour
         {
             return;
         }
-        Vector3 dir = target.position - transform.position;
-        Quaternion lookrotation = Quaternion.LookRotation(dir);
-        // Vector3 rotation = Vector3.RotateTowards(parttorotate.forward, dir, Time.deltaTime * turnspeed, 0.0f);
-        Vector3 rotation = Quaternion.Lerp(parttorotate.rotation, lookrotation, Time.deltaTime * turnspeed).eulerAngles;
-        parttorotate.rotation = Quaternion.Euler(0f, 0f, rotation.z);
-        //Debug.Log("rotationz :" + rotation.z+"  tagert: "+target.rotation.z+"  trans : "+parttorotate.rotation.z+" tower:"+transform.rotation.z);
-        //Debug.Log("look rotation: " + parttorotate.rotation.z);
+
         if (firecountdown <= 0f)
         {
             Shoot();
@@ -67,7 +61,7 @@ public class Tower : MonoBehaviour
     {
         //Debug.Log("shoot!");
         GameObject bulletgo = (GameObject)Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
-        Bullet bullet = bulletgo.GetComponent<Bullet>();
+        WaterBullet bullet = bulletgo.GetComponent<WaterBullet>();
         if (bullet != null)
         {
             //bullet.Seek(target);

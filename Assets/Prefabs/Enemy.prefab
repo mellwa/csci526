@@ -45,16 +45,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1909506424580862
+--- !u!1 &1782053302736344
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4772422583640944}
-  - component: {fileID: 212869894449331960}
-  - component: {fileID: 114742932500699672}
+  - component: {fileID: 4505150557284366}
+  - component: {fileID: 212839328409755244}
+  - component: {fileID: 114623578468230392}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -91,14 +91,14 @@ Transform:
   m_Father: {fileID: 4807421168735660}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4772422583640944
+--- !u!4 &4505150557284366
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1909506424580862}
+  m_GameObject: {fileID: 1782053302736344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.63, y: 1, z: -5}
+  m_LocalPosition: {x: -0.63, y: 1, z: -5}
   m_LocalScale: {x: 125, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4807421168735660}
@@ -116,7 +116,7 @@ Transform:
   m_Children:
   - {fileID: 4895136862724274}
   - {fileID: 4050359209295772}
-  - {fileID: 4772422583640944}
+  - {fileID: 4505150557284366}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -246,19 +246,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114742932500699672
+--- !u!114 &114623578468230392
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1909506424580862}
+  m_GameObject: {fileID: 1782053302736344}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 182823cbed0d50246baf6db7ff784586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 50
+  currentHealth: 100
+  elementalTag: fire
 --- !u!114 &114969986709610170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -271,14 +272,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  speed: 2
-  Healthtrans: {fileID: 4772422583640944}
---- !u!212 &212869894449331960
+  speed: 5
+  Healthtrans: {fileID: 4505150557284366}
+--- !u!212 &212839328409755244
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1909506424580862}
+  m_GameObject: {fileID: 1782053302736344}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -310,8 +311,8 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d7e0be7814fa7412684b4d6d52e51d55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
-  m_FlipY: 1
+  m_FlipX: 0
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.01, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
