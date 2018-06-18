@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 [System.Serializable]
 public class Wave
 {
@@ -14,6 +15,7 @@ public class SpawnEmeny : MonoBehaviour {
 	public GameObject testEnemyPrefab;
 	public Wave[] waves;
 	public int timeBetweenWaves = 5;
+
 
 	private GameManagerBehavior gameManager;
 
@@ -61,9 +63,19 @@ public class SpawnEmeny : MonoBehaviour {
     }
     else
     {
+    	
     	//gameManager.gameOver = true;
-    	//GameObject gameOverText = GameObject.FindGameObjectWithTag ("GameWon");
-    	//gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
+    	if(gameManager.Health>0 && !gameManager.gameOver){
+    	gameManager.gameOver=true;
+    	gameManager.gameWonText.gameObject.SetActive(true);
+	    gameManager.BackToMenu.gameObject.SetActive(true);
+	    gameManager.NextLevel.gameObject.SetActive(true);
+	    Time.timeScale = 0;
+
+    	}
+    	
+	    
+    	// gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
     }
 
 }

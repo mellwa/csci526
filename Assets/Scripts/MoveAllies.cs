@@ -27,7 +27,7 @@ void Update () {
   gameObject.transform.position = Vector2.Lerp (startPosition, endPosition, currentTimeOnPath / totalTimeForPath);
   // 3 
         // Kejin modify:
-        if (Healthtrans.localScale.x < 0)
+        if (Healthtrans.localScale.x <= 0)
         {
             Destroy(gameObject);
         }
@@ -69,5 +69,19 @@ void Update () {
   //3
   GameObject sprite = gameObject.transform.Find("Sprite").gameObject;
   sprite.transform.rotation = Quaternion.AngleAxis(rotationAngle, Vector3.forward);
+}
+public float DistanceToGoal()
+{
+  float distance = 0;
+  distance += Vector2.Distance(
+      gameObject.transform.position, 
+      waypoints [currentWaypoint + 1].transform.position);
+  for (int i = currentWaypoint + 1; i < waypoints.Length - 1; i++)
+  {
+    Vector3 startPosition = waypoints [i].transform.position;
+    Vector3 endPosition = waypoints [i + 1].transform.position;
+    distance += Vector2.Distance(startPosition, endPosition);
+  }
+  return distance;
 }
 }

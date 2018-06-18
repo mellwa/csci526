@@ -15,6 +15,7 @@ public class Restart : MonoBehaviour {
     private void OnClick(){
     	Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
 

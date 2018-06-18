@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_shadow_06
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 6e8dbda04f04a8944ba47cd838cb8503, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.6933594
+    height: 0.20117188
+  textureGUIDs:
+  - b104a80cc6d719d46b9b5b98f4689a80
+  textureSizes:
+  - {x: 710, y: 206}
+  defaultPivotOffsets:
+  - {x: 0, y: 0}
+  textureNames:
+  - 0000_shadow_06
+  texturePaths:
+  - Assets/nGardenMonsterPack06/common_source/assets/0000_shadow_06.png
+  lastBuildID: 20161205152212616
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 256
+  padding: 1
+  forceSquare: 0
