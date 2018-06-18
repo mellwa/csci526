@@ -56,6 +56,7 @@ public class PlaceMonster : MonoBehaviour
               AudioSource audioSource = gameObject.GetComponent<AudioSource>();
               audioSource.PlayOneShot(audioSource.clip);
               gameManager.Gold -= towerPrice1;
+              gameObject.GetComponent<Renderer>().enabled= false;
             }
             if(gameManager.TowerType==2&&gold>=towerPrice2){
                 monster = (GameObject)
@@ -63,6 +64,7 @@ public class PlaceMonster : MonoBehaviour
               AudioSource audioSource = gameObject.GetComponent<AudioSource>();
               audioSource.PlayOneShot(audioSource.clip);
             gameManager.Gold -= towerPrice2;
+            gameObject.GetComponent<Renderer>().enabled= false;
             }
             if(gameManager.TowerType==3&&gold>=towerPrice3){
               monster = (GameObject)
@@ -70,6 +72,7 @@ public class PlaceMonster : MonoBehaviour
               AudioSource audioSource = gameObject.GetComponent<AudioSource>();
               audioSource.PlayOneShot(audioSource.clip);
               gameManager.Gold -= towerPrice3;
+              gameObject.GetComponent<Renderer>().enabled= false;
             }
             
             gameManager.TowerType = 0;
