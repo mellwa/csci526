@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Restart : MonoBehaviour {
+public class NextLevel : MonoBehaviour {
 
     void Start () {
         Button btn = this.GetComponent<Button> ();
@@ -14,8 +14,8 @@ public class Restart : MonoBehaviour {
 
     private void OnClick(){
     	Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
 

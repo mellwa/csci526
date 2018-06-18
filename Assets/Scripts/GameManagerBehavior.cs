@@ -18,6 +18,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public int towerType;
 	public Button Replay;
 	public Button BackToMenu;
+	public Button NextLevel;
 
 	public int Health
 	{

@@ -16,6 +16,7 @@ public class SpawnEmeny : MonoBehaviour {
 	public Wave[] waves;
 	public int timeBetweenWaves = 5;
 
+
 	private GameManagerBehavior gameManager;
 
 	private float lastSpawnTime;
@@ -62,11 +63,18 @@ public class SpawnEmeny : MonoBehaviour {
     }
     else
     {
-    	gameManager.gameOver = true;
+    	
+    	//gameManager.gameOver = true;
+    	if(gameManager.Health>0 && !gameManager.gameOver){
+    	gameManager.gameOver=true;
     	gameManager.gameWonText.gameObject.SetActive(true);
 	    gameManager.BackToMenu.gameObject.SetActive(true);
-	    gameManager.Replay.gameObject.SetActive(true);
+	    gameManager.NextLevel.gameObject.SetActive(true);
 	    Time.timeScale = 0;
+
+    	}
+    	
+	    
     	// gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
     }
 
