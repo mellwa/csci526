@@ -12,6 +12,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public bool gameOver = false;
 	private int wave;
 	private int wave2;
+	//public GameObject EnemyRoad;
 	public Text healthLabel;
 	public GameObject[] healthIndicator;
 	private int health;
@@ -78,7 +79,7 @@ public class GameManagerBehavior : MonoBehaviour {
 			// 		nextWaveLabels[i].GetComponent<Animator>().SetTrigger("nextWave");
 			// 	}
 			// }
-			waveLabel.text = "WAVE: " + (wave + 1);
+			waveLabel.text = "WAVE: " + (wave + 1) +"/"+ GameObject.Find("Road").GetComponent<SpawnEmeny>().waves.Length;;
 		}
 	}
 
@@ -104,14 +105,7 @@ public class GameManagerBehavior : MonoBehaviour {
 		set
 		{
 			wave2 = value;
-			// if (!gameOver)
-			// {
-			// 	for (int i = 0; i < nextWaveLabels.Length; i++)
-			// 	{
-			// 		nextWaveLabels[i].GetComponent<Animator>().SetTrigger("nextWave");
-			// 	}
-			// }
-			// waveLabel.text = "WAVE: " + (wave + 1);
+			
 		}
 	}
 
@@ -137,6 +131,7 @@ public class GameManagerBehavior : MonoBehaviour {
 		Gold = 800;
 		Health = 5;
 		TowerType= 0; //no tower is selected
+		
 		
 	}
 	
