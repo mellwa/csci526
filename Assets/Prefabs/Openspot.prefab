@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1633784534188454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 4912586254634048}
@@ -267,13 +267,18 @@ MonoBehaviour:
     type: 2}
   monsterPrefab3: {fileID: 1422408351744604, guid: 0732912436b5cae47be591336f990b94,
     type: 2}
+  monster: {fileID: 0}
   goldLabel: {fileID: 0}
   towerPrice1: 0
   towerPrice2: 0
   towerPrice3: 0
   RangeTrans: {fileID: 4095476517426108}
   SellTrans: {fileID: 4943939368428928}
+  Ring: {fileID: 0}
   gameManagerObj: {fileID: 0}
+  gameManager: {fileID: 0}
+  RangeOn: 0
+  TowerType: 0
 --- !u!114 &114954812622490290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -285,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b30abd66edbdc438e989b33a6e2e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RangeTrans: {fileID: 4912586254634048}
+  SpotTrans: {fileID: 4912586254634048}
 --- !u!212 &212181314717510698
 SpriteRenderer:
   m_ObjectHideFlags: 1

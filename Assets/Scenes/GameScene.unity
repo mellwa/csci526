@@ -3059,6 +3059,14 @@ Prefab:
       propertyPath: SpotTrans
       value: 
       objectReference: {fileID: 1773457779}
+    - target: {fileID: 4943939368428928, guid: 779de7589be724749bad044af24612e6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943939368428928, guid: 779de7589be724749bad044af24612e6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 779de7589be724749bad044af24612e6, type: 2}
   m_IsPrefabParent: 0
@@ -3696,11 +3704,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!4 &1289021042 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4912586254634048, guid: 779de7589be724749bad044af24612e6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1922495912}
 --- !u!1 &1301922513
 GameObject:
   m_ObjectHideFlags: 0
@@ -5208,11 +5211,6 @@ Prefab:
       propertyPath: gameManagerObj
       value: 
       objectReference: {fileID: 1908307057}
-    - target: {fileID: 114954812622490290, guid: 779de7589be724749bad044af24612e6,
-        type: 2}
-      propertyPath: SpotTrans
-      value: 
-      objectReference: {fileID: 1289021042}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 779de7589be724749bad044af24612e6, type: 2}
   m_IsPrefabParent: 0
