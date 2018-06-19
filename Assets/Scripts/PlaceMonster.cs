@@ -8,18 +8,20 @@ public class PlaceMonster : MonoBehaviour
     public GameObject monsterPrefab;
     public GameObject monsterPrefab2;
     public GameObject monsterPrefab3;
-    private GameObject monster;
+    public GameObject monster;
     public Text goldLabel;
     public int towerPrice1;
     public int towerPrice2;
     public int towerPrice3;
     private int gold;
     public Transform RangeTrans;
-    private Renderer Ring;
+    public Transform SellTrans;
+    public Renderer Ring;
+    private Renderer Sell;
     public GameObject gameManagerObj;
-    private GameManagerBehavior gameManager;
-    private bool RangeOn;
-    private int TowerType;
+    public GameManagerBehavior gameManager;
+    public bool RangeOn;
+    public int TowerType;
     private float tower1Range;
     private float tower2Range;
     private float tower3Range;
@@ -41,6 +43,7 @@ public class PlaceMonster : MonoBehaviour
         tower3Range= 10.0f;
 
         Ring = RangeTrans.gameObject.GetComponent<Renderer>();
+        Sell = SellTrans.gameObject.GetComponent<Renderer>();
         gameManager = gameManagerObj.GetComponent<GameManagerBehavior>();
         TowerType =0;
         RangeOn = false;
@@ -65,11 +68,13 @@ public class PlaceMonster : MonoBehaviour
         if(TowerType>0){
         		if(RangeOn){
         			Ring.enabled=true;
+        			Sell.enabled=true;
         			RangeOn = false;
 
         		}
         		else{
         			Ring.enabled=false;
+        			Sell.enabled=false;
         			RangeOn = true;
         		}
         		
