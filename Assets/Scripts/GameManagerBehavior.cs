@@ -131,7 +131,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	void Start () {
 		Wave = 0;
 		Wave2 = 0;
-		Gold = 800;
+		Gold = 1000;
 		Health = 5;
 		TowerType= 0; //no tower is selected
 		Time.timeScale = 0;
