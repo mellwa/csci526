@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyTower : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class EnemyTower : MonoBehaviour
     public Transform firepoint;
     GameObject nearestenemy = null;
     // Use this for initialization
+
+    
+
+
     void Start()
     {
         InvokeRepeating("Updatetarget", 0f, 0.5f);
@@ -75,5 +80,6 @@ public class EnemyTower : MonoBehaviour
         Gizmos.color = Color.red;
 
     }
+   
 }
 

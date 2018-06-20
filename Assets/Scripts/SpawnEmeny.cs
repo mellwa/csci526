@@ -15,6 +15,7 @@ public class SpawnEmeny : MonoBehaviour {
 	public GameObject testEnemyPrefab;
 	public Wave[] waves;
 	public int timeBetweenWaves = 5;
+	
 
 
 	private GameManagerBehavior gameManager;

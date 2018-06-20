@@ -17451,7 +17451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33f56e4932902a478d68068b3d425c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 10
   turnspeed: 5
   firerate: 1
   enemytag: Ally

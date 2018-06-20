@@ -8899,7 +8899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a661750218b05a4692bb82532c689ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 10
   turnspeed: 5
   firerate: 1
   enemytag: Enemy
