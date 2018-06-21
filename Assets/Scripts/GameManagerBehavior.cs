@@ -8,6 +8,8 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Text goldLabel;
 	public Text gameOverText;
 	public Text gameWonText;
+	public Text BeforeStart;
+	public Text Instruction;
 	private int gold;
 	public bool gameOver = false;
 	private int wave;
@@ -20,6 +22,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Button Replay;
 	public Button BackToMenu;
 	public Button NextLevel;
+	public Button StartButton;
 
 	public int Health
 	{
@@ -128,9 +131,10 @@ public class GameManagerBehavior : MonoBehaviour {
 	void Start () {
 		Wave = 0;
 		Wave2 = 0;
-		Gold = 800;
+		Gold = 1000;
 		Health = 5;
 		TowerType= 0; //no tower is selected
+		Time.timeScale = 0;
 		
 		
 	}

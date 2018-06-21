@@ -35,12 +35,12 @@ public class PlaceMonster : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        towerPrice1= 100;
-        towerPrice2= 200;
-        towerPrice3= 300;
-        tower1Range= 10.0f;
-        tower2Range= 10.0f;
-        tower3Range= 10.0f;
+        towerPrice1= 400;//water
+        towerPrice2= 300;//wood
+        towerPrice3= 250;//fire
+        tower1Range= 5.0f;
+        tower2Range= 4.0f;
+        tower3Range= 6.0f;
 
         Ring = RangeTrans.gameObject.GetComponent<Renderer>();
         Sell = SellTrans.gameObject.GetComponent<Renderer>();
