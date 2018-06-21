@@ -37,7 +37,8 @@ public class SellTower : MonoBehaviour
             spot.RangeOn = false;
             spot.GetComponent<Renderer>().enabled =true;
             spot.Ring.enabled =false;
-            spot.gameManager.Gold += (int)(spot.towerPrice1*0.5f);
+            spot.Upgrade.enabled =false;
+            spot.gameManager.Gold += (int)(spot.towerPrice*0.5f);
 
         }
 
