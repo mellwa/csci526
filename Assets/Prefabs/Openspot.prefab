@@ -261,11 +261,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170a83cdd02b742e8825d13d0596c27c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 1269689813952802, guid: 9ad32012d32b25e49af8de8d39cee691,
+  monsterPrefab: {fileID: 1521837444620704, guid: 1e2511473102a4045835b8abc03304fb,
     type: 2}
-  monsterPrefab2: {fileID: 1997360101287462, guid: e86fa955488e2324789d534a1d884ed8,
+  monsterPrefab2: {fileID: 1377552214612256, guid: 2a41be6e7a32de041b1928c666223ccc,
     type: 2}
-  monsterPrefab3: {fileID: 1422408351744604, guid: 0732912436b5cae47be591336f990b94,
+  monsterPrefab3: {fileID: 1085975268571706, guid: 80f29e1021df4a14c95b745d05235eae,
     type: 2}
   monster: {fileID: 0}
   goldLabel: {fileID: 0}

@@ -38,9 +38,9 @@ public class PlaceMonster : MonoBehaviour
         towerPrice1= 400;//water
         towerPrice2= 300;//wood
         towerPrice3= 250;//fire
-        tower1Range= 5.0f;
+        tower1Range= 6.0f;
         tower2Range= 4.0f;
-        tower3Range= 6.0f;
+        tower3Range= 5.0f;
 
         Ring = RangeTrans.gameObject.GetComponent<Renderer>();
         Sell = SellTrans.gameObject.GetComponent<Renderer>();
