@@ -259,7 +259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   speed: 3
-  goldEarn: 500
+  goldEarn: 300
   Healthtrans: {fileID: 4117104952635620}
 --- !u!114 &114578287269959238
 MonoBehaviour:
