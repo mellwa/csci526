@@ -11,6 +11,9 @@ public class PlaceMonster : MonoBehaviour
     public GameObject monsterPrefab_2;
     public GameObject monsterPrefab2_2;
     public GameObject monsterPrefab3_2;
+    public GameObject monsterPrefab_3;
+    public GameObject monsterPrefab2_3;
+    public GameObject monsterPrefab3_3;
     public GameObject monster;
     public Text goldLabel;
     public int towerPrice;
@@ -136,18 +139,6 @@ public class PlaceMonster : MonoBehaviour
         }
     }
 
-    //  void OnMouseOver()
-    // {
-    //     //if(gameManager.TowerType>0){
-    //     	Ring.enabled=true;
-    //     //}
-        
-    // }
 
-    // void OnMouseExit()
-    // {
-    //     //The mouse is no longer hovering over the GameObject so output this message each frame
-    //     Ring.enabled=false;
-    // }
 
 }

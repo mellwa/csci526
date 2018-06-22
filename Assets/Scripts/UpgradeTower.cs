@@ -29,29 +29,46 @@ public class UpgradeTower : MonoBehaviour
     //1
     void OnMouseUp()
     {
-        if(gameObject.GetComponent<Renderer>().enabled  && spot.gameManager.Gold>=(int)(spot.towerPrice*0.8f)){
+        if(gameObject.GetComponent<Renderer>().enabled  && spot.gameManager.Gold>=(int)(spot.towerPrice*0.8f )){
             Destroy(spot.monster);
             switch (spot.TowerType)
             {
                 case 1:
+                //waterLv2
                 spot.monster = (GameObject)
                 Instantiate(spot.monsterPrefab_2, spot.myVector, Quaternion.identity);
-                spot.TowerType =4;//waterLv2
+                
                 break;
                 case 2:
                 spot.monster = (GameObject)
                 Instantiate(spot.monsterPrefab2_2, spot.myVector, Quaternion.identity);
-                spot.TowerType =5;//WoodLv2
+               
                 break;
                 case 3:
                 spot.monster = (GameObject)
                 Instantiate(spot.monsterPrefab3_2, spot.myVector, Quaternion.identity);
-                spot.TowerType =6;//FireLv2
+                
+                break;
+                case 4:
+                spot.monster = (GameObject)
+                Instantiate(spot.monsterPrefab_3, spot.myVector, Quaternion.identity);
+                
+                break;
+                case 5:
+                spot.monster = (GameObject)
+                Instantiate(spot.monsterPrefab2_3, spot.myVector, Quaternion.identity);
+                
+                break;
+                case 6:
+                spot.monster = (GameObject)
+                Instantiate(spot.monsterPrefab3_3, spot.myVector, Quaternion.identity);
+               
                 break;
                 default:
                 //healthBar.currentHealth -= Mathf.Max(damage, 0);
                 break;
             }
+            spot.TowerType +=3;
             
             
 
@@ -62,6 +79,7 @@ public class UpgradeTower : MonoBehaviour
             //spot.GetComponent<Renderer>().enabled =true;
            // spot.Ring.enabled =false;
             //spot.Sell.enabled =false;
+            if(spot.TowerType>6)
             spot.Upgrade.enabled =false;
             spot.gameManager.Gold -= (int)(spot.towerPrice*0.8f);
             spot.towerPrice+=(int)(spot.towerPrice*0.8f);

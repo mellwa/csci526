@@ -336,11 +336,17 @@ MonoBehaviour:
     type: 2}
   monsterPrefab3: {fileID: 1085975268571706, guid: 80f29e1021df4a14c95b745d05235eae,
     type: 2}
-  monsterPrefab_2: {fileID: 1269689813952802, guid: 9ad32012d32b25e49af8de8d39cee691,
+  monsterPrefab_2: {fileID: 1901021884675236, guid: dbf852461723d4844967cb17771f6e2c,
     type: 2}
-  monsterPrefab2_2: {fileID: 1997360101287462, guid: e86fa955488e2324789d534a1d884ed8,
+  monsterPrefab2_2: {fileID: 1972533267559698, guid: b77a9a42a0267604aa92496d4b6f157f,
     type: 2}
-  monsterPrefab3_2: {fileID: 1422408351744604, guid: 0732912436b5cae47be591336f990b94,
+  monsterPrefab3_2: {fileID: 1629765607916558, guid: 0ed0bb119861cf042817ec4b6d4c52f0,
+    type: 2}
+  monsterPrefab_3: {fileID: 1269689813952802, guid: 9ad32012d32b25e49af8de8d39cee691,
+    type: 2}
+  monsterPrefab2_3: {fileID: 1997360101287462, guid: e86fa955488e2324789d534a1d884ed8,
+    type: 2}
+  monsterPrefab3_3: {fileID: 1422408351744604, guid: 0732912436b5cae47be591336f990b94,
     type: 2}
   monster: {fileID: 0}
   goldLabel: {fileID: 0}
