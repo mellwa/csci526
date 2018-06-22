@@ -6,15 +6,14 @@ using UnityEngine.UI;
 public class SellTower : MonoBehaviour
 {
 
-    public Transform SpotTrans;
-    private Renderer Ring;
-    private PlaceMonster spot;
+    public Transform MenuTrans;
+    private Menu menu;
 
  // Use this for initialization
     void Start()
 
     {
-        spot = SpotTrans.gameObject.GetComponent<PlaceMonster>();
+        menu = MenuTrans.gameObject.GetComponent<Menu>();
 
     }
 
@@ -29,18 +28,16 @@ public class SellTower : MonoBehaviour
     //1
     void OnMouseUp()
     {
-        if(gameObject.GetComponent<Renderer>().enabled){
-            Destroy(spot.monster);
-            gameObject.GetComponent<Renderer>().enabled =false;
-            SpotTrans.gameObject.GetComponent<Renderer>().enabled =false;
-            spot.TowerType =0;
-            spot.RangeOn = false;
-            spot.GetComponent<Renderer>().enabled =true;
-            spot.Ring.enabled =false;
-            spot.Upgrade.enabled =false;
-            spot.gameManager.Gold += (int)(spot.towerPrice*0.5f);
+        Destroy(menu.spot.monster);
+            menu.spot.TowerType=0;
+            menu.spot.RangeTrans.transform.localScale=new Vector3 (menu.spot.scaleVec.x ,menu.spot.scaleVec.y,0);
+            menu.spot.gameManager.Gold+=  (int)(menu.spot.towerPrice*0.5f);
+            menu.spot.Ring.enabled=false;
+            menu.spot.localMenuOn=false;
+            menu.spot.gameManager.menuOn =false;
+            MenuTrans.gameObject.SetActive(false);
+            menu.SpotTrans.gameObject.GetComponent<Renderer>().enabled= true;
 
-        }
 
     }
 

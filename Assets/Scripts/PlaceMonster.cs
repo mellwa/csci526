@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,25 +22,19 @@ public class PlaceMonster : MonoBehaviour
     public int towerPrice3;
     private int gold;
     public Transform RangeTrans;
-    public Transform SellTrans;
-    public Transform UpgradeTrans;
     public Renderer Ring;
-    public Renderer Upgrade;
-    public Renderer Sell;
+    public Transform MenuTrans;
+    private Menu menu;
     public GameObject gameManagerObj;
     public GameManagerBehavior gameManager;
-    public bool RangeOn;
+
     public int TowerType;
-    private float tower1Range;
-    private float tower2Range;
-    private float tower3Range;
-    private Vector3 scaleVec;
+    public float tower1Range;
+    public float tower2Range;
+    public float tower3Range;
+    public Vector3 scaleVec;
     public Vector3 myVector;
-
-
-
-
-
+    public bool localMenuOn = false;
 
     // Use this for initialization
     void Start()
@@ -53,11 +47,10 @@ public class PlaceMonster : MonoBehaviour
         tower3Range= 5.0f;
 
         Ring = RangeTrans.gameObject.GetComponent<Renderer>();
-        Sell = SellTrans.gameObject.GetComponent<Renderer>();
-        Upgrade = UpgradeTrans.gameObject.GetComponent<Renderer>();
         gameManager = gameManagerObj.GetComponent<GameManagerBehavior>();
+        menu = MenuTrans.gameObject.GetComponent<Menu>();
         TowerType =0;
-        RangeOn = false;
+        localMenuOn = false;
         scaleVec = RangeTrans.transform.localScale ;
         myVector = transform.position;
         myVector.y-=1.5f;
@@ -65,8 +58,6 @@ public class PlaceMonster : MonoBehaviour
 
 
     }
-
-
     // Update is called once per frame
     void Update()
     {
@@ -74,69 +65,61 @@ public class PlaceMonster : MonoBehaviour
     }
 
 
-    //1
     void OnMouseUp()
     {
-        //2
-        if(TowerType>0){
-        		if(RangeOn){
-        			Ring.enabled=true;
-        			Sell.enabled=true;
-        			Upgrade.enabled=true;
-        			RangeOn = false;
+    	if ((!gameManager.menuOn) || localMenuOn){
+    		MenuTrans.position = transform.position;
+    		gameManager.menuOn =true;
+    		menu.spot =transform.gameObject.GetComponent<PlaceMonster>();
+    		menu.SpotTrans =transform;
+
+    		if(TowerType>0){
+    			if(!localMenuOn){
+    				Ring.enabled=true;MenuTrans.gameObject.SetActive(true);
+        			localMenuOn =true;
+        			menu.Tower1Trans.gameObject.SetActive(false);
+        			menu.Tower2Trans.gameObject.SetActive(false);
+	        		menu.Tower3Trans.gameObject.SetActive(false);
+	        		menu.SellTrans.gameObject.SetActive(true);
+	        		if(TowerType <7){
+	        			menu.UpgradeTrans.gameObject.SetActive(true);
+	        			menu.MaxTrans.gameObject.SetActive(false);
+	        		}
+	        		else{
+	        			menu.UpgradeTrans.gameObject.SetActive(false);
+	        			menu.MaxTrans.gameObject.SetActive(true);
+	        		}
+	        		
 
         		}
         		else{
         			Ring.enabled=false;
-        			Sell.enabled=false;
-        			Upgrade.enabled=false;
-        			RangeOn = true;
+        			MenuTrans.gameObject.SetActive(false);
+        			gameManager.menuOn =false;
+        			localMenuOn =false;
         		}
-        		
-            }
-        if (TowerType==0)
-        {
-             
-            
-            gold = gameManager.Gold;
-            //3
-            if(gameManager.TowerType==1&&gold>=towerPrice1){
-            	towerPrice = towerPrice1;
-                monster = (GameObject)
-              Instantiate(monsterPrefab, myVector, Quaternion.identity);
-              AudioSource audioSource = gameObject.GetComponent<AudioSource>();
-              audioSource.PlayOneShot(audioSource.clip);
-              gameManager.Gold -= towerPrice1;
-              gameObject.GetComponent<Renderer>().enabled= false;
-              TowerType=1;
-              RangeTrans.transform.localScale=new Vector3 (scaleVec.x * tower1Range,scaleVec.y * tower1Range,0);
-            }
-            if(gameManager.TowerType==2&&gold>=towerPrice2){
-            	towerPrice = towerPrice2;
-                monster = (GameObject)
-              Instantiate(monsterPrefab2, myVector, Quaternion.identity);
-              AudioSource audioSource = gameObject.GetComponent<AudioSource>();
-              audioSource.PlayOneShot(audioSource.clip);
-            gameManager.Gold -= towerPrice2;
-            gameObject.GetComponent<Renderer>().enabled= false;
-            TowerType=2;
-            RangeTrans.transform.localScale=new Vector3 (scaleVec.x * tower2Range,scaleVec.y * tower2Range,0);
-            }
-            if(gameManager.TowerType==3&&gold>=towerPrice3){
-            	towerPrice = towerPrice3;
-              monster = (GameObject)
-              Instantiate(monsterPrefab3, myVector, Quaternion.identity);
-              AudioSource audioSource = gameObject.GetComponent<AudioSource>();
-              audioSource.PlayOneShot(audioSource.clip);
-              gameManager.Gold -= towerPrice3;
-              gameObject.GetComponent<Renderer>().enabled= false;
-              TowerType=3;
-              RangeTrans.transform.localScale=new Vector3 (scaleVec.x * tower3Range,scaleVec.y * tower3Range,0);
-            }
-            
-            
-            gameManager.TowerType = 0;
-        }
+        	}
+        	if (TowerType==0){
+        		if(localMenuOn){
+        			MenuTrans.gameObject.SetActive(false);
+        			gameManager.menuOn =false;
+        			localMenuOn =false;
+        		}
+        		else{
+        			MenuTrans.gameObject.SetActive(true);
+        			localMenuOn =true;
+        			menu.Tower1Trans.gameObject.SetActive(true);
+        			menu.Tower2Trans.gameObject.SetActive(true);
+	        		menu.Tower3Trans.gameObject.SetActive(true);
+	        		menu.SellTrans.gameObject.SetActive(false);
+	        		menu.UpgradeTrans.gameObject.SetActive(false);
+	        		menu.MaxTrans.gameObject.SetActive(false);
+        		}
+
+        	}
+
+    	}
+        
     }
 
 

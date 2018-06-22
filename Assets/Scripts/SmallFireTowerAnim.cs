@@ -39,7 +39,7 @@ public class SmallFireTowerAnim : MonoBehaviour {
 		
 		if (boneAni.IsPlaying(ani) == true) boneAni.Stop();
 		
-		Debug.Log(boneAni[ani].length);
+
 		
 		boneAni.CrossFade(ani);
 		

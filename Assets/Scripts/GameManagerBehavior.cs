@@ -23,6 +23,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Button BackToMenu;
 	public Button NextLevel;
 	public Button StartButton;
+	public bool menuOn=false;
 
 	public int Health
 	{
