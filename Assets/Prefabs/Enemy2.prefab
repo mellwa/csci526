@@ -302,8 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182823cbed0d50246baf6db7ff784586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 120
+  currentHealth: 120
   elementalTag: water
 --- !u!114 &114781550995287846
 MonoBehaviour:
@@ -317,7 +317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  speed: 5
+  speed: 4
+  earnGold: 90
   Healthtrans: {fileID: 4966168548485148}
 --- !u!212 &212038095079947848
 SpriteRenderer:

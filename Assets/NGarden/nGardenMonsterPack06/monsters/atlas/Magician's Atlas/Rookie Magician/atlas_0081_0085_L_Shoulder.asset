@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_0081_0085_L_Shoulder
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 8ba8a8733fcca47488e75f40013bf850, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.26367188
+    height: 0.40429688
+  - serializedVersion: 2
+    x: 0
+    y: 0.40625
+    width: 0.26367188
+    height: 0.40429688
+  - serializedVersion: 2
+    x: 0.265625
+    y: 0
+    width: 0.26367188
+    height: 0.40429688
+  - serializedVersion: 2
+    x: 0.53125
+    y: 0
+    width: 0.26367188
+    height: 0.40429688
+  - serializedVersion: 2
+    x: 0.265625
+    y: 0.40625
+    width: 0.26367188
+    height: 0.40429688
+  textureGUIDs:
+  - 3a6fb6c097d69c7488ebafb408fa3f17
+  - dd7facf5dcc3a7c4e9add47945b271e3
+  - 28a42f56a2cad3e42bb5d7c300dafc1f
+  - e16f3f4abd0da2946991956cf38d23a7
+  - c30866bbf0a89864eb67726442543678
+  textureSizes:
+  - {x: 135, y: 207}
+  - {x: 135, y: 207}
+  - {x: 135, y: 207}
+  - {x: 135, y: 207}
+  - {x: 135, y: 207}
+  defaultPivotOffsets:
+  - {x: 0.027165351, y: 0.15354331}
+  - {x: 0.027165351, y: 0.15354331}
+  - {x: 0.027165351, y: 0.15354331}
+  - {x: 0.027165353, y: 0.15354331}
+  - {x: 0.027165351, y: 0.15354331}
+  textureNames:
+  - 0082_L_Shoulder
+  - 0083_L_Shoulder
+  - 0085_L_Shoulder
+  - 0081_L_Shoulder
+  - 0084_L_Shoulder
+  texturePaths:
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0082/0082_L_Shoulder.png
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0083/0083_L_Shoulder.png
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0085/0085_L_Shoulder.png
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0081/0081_L_Shoulder.png
+  - Assets/allDungeon/textures/0001_0100/0081_0085/0084/0084_L_Shoulder.png
+  lastBuildID: 20140618122615710
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0

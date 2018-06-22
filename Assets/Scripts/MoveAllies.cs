@@ -8,6 +8,7 @@ public GameObject[] waypoints;
 private int currentWaypoint = 0;
 private float lastWaypointSwitchTime;
 public float speed = 1.0f;
+public int goldEarn;
     public Transform Healthtrans;
 	// Use this for initialization
 void Start () {
@@ -51,7 +52,7 @@ void Update () {
       AudioSource audioSource = gameObject.GetComponent<AudioSource>();
       AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
       GameManagerBehavior gameManager = GameObject.Find("GameManager").GetComponent<GameManagerBehavior>();
-      gameManager.Gold += 100;
+      gameManager.Gold += goldEarn;
     }
   }
 }

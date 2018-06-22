@@ -8,16 +8,25 @@ public class PlaceMonster : MonoBehaviour
     public GameObject monsterPrefab;
     public GameObject monsterPrefab2;
     public GameObject monsterPrefab3;
+    public GameObject monsterPrefab_2;
+    public GameObject monsterPrefab2_2;
+    public GameObject monsterPrefab3_2;
+    public GameObject monsterPrefab_3;
+    public GameObject monsterPrefab2_3;
+    public GameObject monsterPrefab3_3;
     public GameObject monster;
     public Text goldLabel;
+    public int towerPrice;
     public int towerPrice1;
     public int towerPrice2;
     public int towerPrice3;
     private int gold;
     public Transform RangeTrans;
     public Transform SellTrans;
+    public Transform UpgradeTrans;
     public Renderer Ring;
-    private Renderer Sell;
+    public Renderer Upgrade;
+    public Renderer Sell;
     public GameObject gameManagerObj;
     public GameManagerBehavior gameManager;
     public bool RangeOn;
@@ -26,6 +35,7 @@ public class PlaceMonster : MonoBehaviour
     private float tower2Range;
     private float tower3Range;
     private Vector3 scaleVec;
+    public Vector3 myVector;
 
 
 
@@ -35,19 +45,22 @@ public class PlaceMonster : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        towerPrice1= 100;
-        towerPrice2= 200;
-        towerPrice3= 300;
-        tower1Range= 10.0f;
-        tower2Range= 10.0f;
-        tower3Range= 10.0f;
+        towerPrice1= 400;//water
+        towerPrice2= 300;//wood
+        towerPrice3= 250;//fire
+        tower1Range= 6.0f;
+        tower2Range= 4.0f;
+        tower3Range= 5.0f;
 
         Ring = RangeTrans.gameObject.GetComponent<Renderer>();
         Sell = SellTrans.gameObject.GetComponent<Renderer>();
+        Upgrade = UpgradeTrans.gameObject.GetComponent<Renderer>();
         gameManager = gameManagerObj.GetComponent<GameManagerBehavior>();
         TowerType =0;
         RangeOn = false;
         scaleVec = RangeTrans.transform.localScale ;
+        myVector = transform.position;
+        myVector.y-=1.5f;
         //+= new Vector3(1.0f, 1.0f, 0)
 
 
@@ -69,24 +82,26 @@ public class PlaceMonster : MonoBehaviour
         		if(RangeOn){
         			Ring.enabled=true;
         			Sell.enabled=true;
+        			Upgrade.enabled=true;
         			RangeOn = false;
 
         		}
         		else{
         			Ring.enabled=false;
         			Sell.enabled=false;
+        			Upgrade.enabled=false;
         			RangeOn = true;
         		}
         		
             }
         if (TowerType==0)
         {
-            Vector3 myVector = transform.position;
-            myVector.y-=1.5f; 
+             
             
             gold = gameManager.Gold;
             //3
             if(gameManager.TowerType==1&&gold>=towerPrice1){
+            	towerPrice = towerPrice1;
                 monster = (GameObject)
               Instantiate(monsterPrefab, myVector, Quaternion.identity);
               AudioSource audioSource = gameObject.GetComponent<AudioSource>();
@@ -97,6 +112,7 @@ public class PlaceMonster : MonoBehaviour
               RangeTrans.transform.localScale=new Vector3 (scaleVec.x * tower1Range,scaleVec.y * tower1Range,0);
             }
             if(gameManager.TowerType==2&&gold>=towerPrice2){
+            	towerPrice = towerPrice2;
                 monster = (GameObject)
               Instantiate(monsterPrefab2, myVector, Quaternion.identity);
               AudioSource audioSource = gameObject.GetComponent<AudioSource>();
@@ -107,6 +123,7 @@ public class PlaceMonster : MonoBehaviour
             RangeTrans.transform.localScale=new Vector3 (scaleVec.x * tower2Range,scaleVec.y * tower2Range,0);
             }
             if(gameManager.TowerType==3&&gold>=towerPrice3){
+            	towerPrice = towerPrice3;
               monster = (GameObject)
               Instantiate(monsterPrefab3, myVector, Quaternion.identity);
               AudioSource audioSource = gameObject.GetComponent<AudioSource>();
@@ -122,18 +139,6 @@ public class PlaceMonster : MonoBehaviour
         }
     }
 
-    //  void OnMouseOver()
-    // {
-    //     //if(gameManager.TowerType>0){
-    //     	Ring.enabled=true;
-    //     //}
-        
-    // }
 
-    // void OnMouseExit()
-    // {
-    //     //The mouse is no longer hovering over the GameObject so output this message each frame
-    //     Ring.enabled=false;
-    // }
 
 }
