@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_0066_0070_Hair
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: a08f5ade782c4b241aaf5be5ec583403, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.28222656
+    height: 0.30566406
+  - serializedVersion: 2
+    x: 0.28271484
+    y: 0
+    width: 0.28222656
+    height: 0.30517578
+  - serializedVersion: 2
+    x: 0.5654297
+    y: 0
+    width: 0.28222656
+    height: 0.30517578
+  - serializedVersion: 2
+    x: 0
+    y: 0.30615234
+    width: 0.28222656
+    height: 0.30566406
+  - serializedVersion: 2
+    x: 0
+    y: 0.6123047
+    width: 0.28222656
+    height: 0.30566406
+  textureGUIDs:
+  - e91b8c11637b77043abcc549b55cd302
+  - 4d18924428f310d40a86d15bb00c0ad9
+  - 01f918b96c4ff4f4caafbd351b4fe526
+  - dfa44cdd6e1194b48a795266ba0d0d37
+  - 77e3962e3dca77f4f8ffa5cd0179d411
+  textureSizes:
+  - {x: 578, y: 626}
+  - {x: 578, y: 625}
+  - {x: 578, y: 625}
+  - {x: 578, y: 626}
+  - {x: 578, y: 626}
+  defaultPivotOffsets:
+  - {x: -0.11785711, y: 0.1485888}
+  - {x: -0.11785711, y: 0.1485888}
+  - {x: -0.11785711, y: 0.1485888}
+  - {x: -0.11785714, y: 0.14858878}
+  - {x: -0.11785711, y: 0.1485888}
+  textureNames:
+  - 0069_Hair
+  - 0067_Hair
+  - 0068_Hair
+  - 0066_Hair
+  - 0070_Hair
+  texturePaths:
+  - Assets/0001_0135/textures/0001_0135/0066_0070/0069/0069_Hair.png
+  - Assets/0001_0135/textures/0001_0135/0066_0070/0067/0067_Hair.png
+  - Assets/0001_0135/textures/0001_0135/0066_0070/0068/0068_Hair.png
+  - Assets/0001_0135/textures/0001_0135/0066_0070/0066/0066_Hair.png
+  - Assets/0001_0135/textures/0001_0135/0066_0070/0070/0070_Hair.png
+  lastBuildID: 20141015144115961
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0
