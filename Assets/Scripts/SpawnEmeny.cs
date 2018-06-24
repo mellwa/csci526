@@ -15,6 +15,7 @@ public class SpawnEmeny : MonoBehaviour {
 	public GameObject testEnemyPrefab;
 	public Wave[] waves;
 	public int timeBetweenWaves = 5;
+	public string lvStars;
 	
 
 
@@ -71,7 +72,10 @@ public class SpawnEmeny : MonoBehaviour {
     	gameManager.gameWonText.gameObject.SetActive(true);
 	    gameManager.BackToMenu.gameObject.SetActive(true);
 	    gameManager.NextLevel.gameObject.SetActive(true);
+	    PlayerPrefs.SetInt(lvStars, 1);
 	    Time.timeScale = 0;
+
+
 
     	}
     	

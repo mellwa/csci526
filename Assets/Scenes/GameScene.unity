@@ -3544,6 +3544,7 @@ MonoBehaviour:
     spawnInterval: 0.9
     maxEnemies: 20
   timeBetweenWaves: 5
+  lvStars: Level1
 --- !u!4 &926948121
 Transform:
   m_ObjectHideFlags: 0
