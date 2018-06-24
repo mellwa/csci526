@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class FireTower : MonoBehaviour
 {
-    private Transform target;
+    
     private float firecountdown = 0f;
     [Header("Attributes")]
     public float range = 15f;
-    public float turnspeed = 5f;
     public float firerate = 1f;
     [Header("Setup fields")]
     public string enemytag = "Enemy";
     //public Transform parttorotate;
     public GameObject bulletprefab;
     public Transform firepoint;
-    GameObject nearestenemy = null;
+    GameObject target = null;
     // Use this for initialization
     void Start()
     {
@@ -24,24 +23,22 @@ public class FireTower : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Updatetarget()
+   void Updatetarget()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemytag);
-        float shortesdistoenemy = Mathf.Infinity;
+        float minimalEnemyDistance = Mathf.Infinity;
 
         foreach (GameObject enemy in enemies)
         {
-            float distancetoenemy = Vector2.Distance(transform.position, enemy.transform.position);
-            if (shortesdistoenemy > distancetoenemy)
-            {
-                shortesdistoenemy = distancetoenemy;
-                nearestenemy = enemy;
+            float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
+            float distanceToGoal = enemy.GetComponent<MoveEnemy>().DistanceToGoal();
+            if (distanceToEnemy<= range && distanceToGoal < minimalEnemyDistance){
+                target = enemy;
+                minimalEnemyDistance = distanceToGoal;
+
             }
         }
-        if (nearestenemy != null && shortesdistoenemy <= range)
-        {
-            target = nearestenemy.transform;
-        }
+        
     }
     void Update()
     {
@@ -65,7 +62,7 @@ public class FireTower : MonoBehaviour
         if (bullet != null)
         {
             //bullet.Seek(target);
-            bullet.Seekenemy(nearestenemy);
+            bullet.Seekenemy(target);
         }
 
     }
