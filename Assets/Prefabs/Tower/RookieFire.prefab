@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 114679062014419802}
   m_Layer: 0
   m_Name: RookieFire
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -893,7 +893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 5
-  turnspeed: 5
   firerate: 1
   enemytag: Enemy
   bulletprefab: {fileID: 1244194383086576, guid: f4830569ac346324cbb30e0d5bd33da1,

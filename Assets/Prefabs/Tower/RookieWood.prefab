@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 114742920823622340}
   m_Layer: 0
   m_Name: RookieWood
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31036,7 +31036,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 4
-  turnspeed: 5
   firerate: 1
   enemytag: Enemy
   bulletprefab: {fileID: 1225511484327240, guid: 4300646db36f8b74787a645c7464b630,

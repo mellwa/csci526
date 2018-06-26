@@ -8916,7 +8916,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 5
-  turnspeed: 5
   firerate: 1
   enemytag: Enemy
   bulletprefab: {fileID: 1244194383086576, guid: f4830569ac346324cbb30e0d5bd33da1,
