@@ -72,7 +72,9 @@ public class SpawnEmeny : MonoBehaviour {
     	gameManager.gameWonText.gameObject.SetActive(true);
 	    gameManager.BackToMenu.gameObject.SetActive(true);
 	    gameManager.NextLevel.gameObject.SetActive(true);
+
 	    PlayerPrefs.SetInt(lvStars, 1);
+	    
 	    Time.timeScale = 0;
 
 

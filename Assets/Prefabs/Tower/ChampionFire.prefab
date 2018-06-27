@@ -350,7 +350,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4195702587468852}
-  - component: {fileID: 114260019405466988}
+  - component: {fileID: 114802818614515094}
   m_Layer: 0
   m_Name: ChampionFire
   m_TagString: Tower
@@ -997,23 +997,6 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114260019405466988
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1629765607916558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a661750218b05a4692bb82532c689ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 5
-  firerate: 1
-  enemytag: Enemy
-  bulletprefab: {fileID: 1244194383086576, guid: f4830569ac346324cbb30e0d5bd33da1,
-    type: 2}
-  firepoint: {fileID: 4343479583985898}
 --- !u!114 &114798430428565596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1028,6 +1011,23 @@ MonoBehaviour:
   no: 
   changeTo: 1
   SpriteTrans: {fileID: 4753369723555872}
+--- !u!114 &114802818614515094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629765607916558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f6d6ff9097c0b4da41da357966107b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 5
+  firerate: 1
+  enemytag: Enemy
+  bulletprefab: {fileID: 1244194383086576, guid: f4830569ac346324cbb30e0d5bd33da1,
+    type: 2}
+  firepoint: {fileID: 4343479583985898}
 --- !u!114 &114891490713911774
 MonoBehaviour:
   m_ObjectHideFlags: 1
