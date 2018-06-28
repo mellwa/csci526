@@ -3335,28 +3335,14 @@ MonoBehaviour:
   - {fileID: 1301922513}
   testEnemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
   waves:
-  - enemyPrefab: {fileID: 1185065637352140, guid: 00dd452e6fdff4f439082eed5b62e2bf,
-      type: 2}
-    spawnInterval: 0.9
-    maxEnemies: 4
-  - enemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
-    spawnInterval: 2
-    maxEnemies: 4
-  - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
-      type: 2}
-    spawnInterval: 2
-    maxEnemies: 4
-  - enemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
-    spawnInterval: 0.5
-    maxEnemies: 8
-  - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
-      type: 2}
-    spawnInterval: 1
-    maxEnemies: 8
-  - enemyPrefab: {fileID: 1185065637352140, guid: 00dd452e6fdff4f439082eed5b62e2bf,
-      type: 2}
-    spawnInterval: 0.9
-    maxEnemies: 20
+  - spawnInterval: 0.9
+    totalEnemies: 4
+    enemyList:
+    - enemyPrefab: {fileID: 1185065637352140, guid: 00dd452e6fdff4f439082eed5b62e2bf,
+        type: 2}
+      maxEnemies: 2
+    - enemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
+      maxEnemies: 2
   timeBetweenWaves: 5
   lvStars: Level1
 --- !u!4 &926948121
