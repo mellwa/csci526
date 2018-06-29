@@ -35,8 +35,12 @@ public class FireBullet : MonoBehaviour
     }
     void HitTarget()
     {
+        if(nearestenemy.gameObject.tag=="spot"){
+            Destroy(gameObject);
 
-        //kejin modify:
+        }
+        else{
+            //kejin modify:
         Transform healthBarTransform = nearestenemy.transform.Find("HealthBar");
         HealthBar healthBar = healthBarTransform.gameObject.GetComponent<HealthBar>();
        
@@ -70,4 +74,9 @@ public class FireBullet : MonoBehaviour
         Destroy(gameObject);
 
     }
+
+        }
+
+
+        
 }

@@ -43,6 +43,17 @@ public class EnemyTower : MonoBehaviour
 
             }
         }
+        if(target == null)
+        {
+            GameObject[] spots = GameObject.FindGameObjectsWithTag("spot");
+            foreach (GameObject spot in spots)
+            {
+                float distanceToSpot = Vector2.Distance(transform.position, spot.transform.position);
+                if (distanceToSpot <= range && (spot.GetComponent<PlaceMonster>().TowerType>0)){
+                    target = spot;
+                }
+            }
+        }
         
     }
     void Update()

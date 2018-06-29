@@ -1,9 +1,9 @@
-﻿
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBullet : MonoBehaviour
-{
-    //private Transform target;
+public class EnemyBullet : MonoBehaviour {
+//private Transform target;
     public float speed = 10f;
     public float damage =40.0f;
     
@@ -48,10 +48,10 @@ public class EnemyBullet : MonoBehaviour
                 healthBar.currentHealth -= Mathf.Max(damage, 0);
                 break;
                 case "water":
-                healthBar.currentHealth -= Mathf.Max(damage, 0);
+                healthBar.currentHealth -= Mathf.Max(damage*0.6f, 0);
                 break;
                 case "wood":
-                healthBar.currentHealth -= Mathf.Max(damage, 0);
+                healthBar.currentHealth -= Mathf.Max(damage*0.6f, 0);
                 break;
                 default:
                 healthBar.currentHealth -= Mathf.Max(damage, 0);
