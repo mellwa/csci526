@@ -74,7 +74,7 @@ public class EnemyTower : MonoBehaviour
     {
         //Debug.Log("shoot!");
         GameObject bulletgo = (GameObject)Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
-        FireBullet bullet = bulletgo.GetComponent<FireBullet>();
+        EnemyBullet bullet = bulletgo.GetComponent<EnemyBullet>();
         if (bullet != null)
         {
             //bullet.Seek(target);

@@ -20,8 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4855545228405110}
   - component: {fileID: 212221773252121448}
-  - component: {fileID: 114162663834560338}
-  - component: {fileID: 114201908008853642}
+  - component: {fileID: 114674220999901920}
   m_Layer: 0
   m_Name: EnemyBullets
   m_TagString: Untagged
@@ -168,20 +167,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114162663834560338
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1027817519118000}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b0f1d9b675f3345b6e1a0c4b0d6fe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  damage: 40
---- !u!114 &114201908008853642
+--- !u!114 &114674220999901920
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -232,7 +218,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5

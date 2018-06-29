@@ -74,9 +74,5 @@ public class FireBullet : MonoBehaviour
         Destroy(gameObject);
 
     }
-
-        }
-
-
-        
+    }      
 }

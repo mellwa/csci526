@@ -17452,10 +17452,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 10
-  turnspeed: 5
   firerate: 1
   enemytag: Ally
-  bulletprefab: {fileID: 1040870881520456, guid: 5645c34b0ea193f40a09d2ef7548c72a,
+  bulletprefab: {fileID: 1027817519118000, guid: 5645c34b0ea193f40a09d2ef7548c72a,
     type: 2}
   firepoint: {fileID: 4840575557350478}
 --- !u!114 &114990325410457068

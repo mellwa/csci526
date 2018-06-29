@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
-public class EnemyBullet : MonoBehaviour {
-//private Transform target;
+public class EnemyBullet : MonoBehaviour
+{
+    //private Transform target;
     public float speed = 10f;
     public float damage =40.0f;
     
@@ -35,8 +35,12 @@ public class EnemyBullet : MonoBehaviour {
     }
     void HitTarget()
     {
+        if(nearestenemy.gameObject.tag=="spot"){
+            Destroy(gameObject);
 
-        //kejin modify:
+        }
+        else{
+            //kejin modify:
         Transform healthBarTransform = nearestenemy.transform.Find("HealthBar");
         HealthBar healthBar = healthBarTransform.gameObject.GetComponent<HealthBar>();
        
@@ -70,4 +74,5 @@ public class EnemyBullet : MonoBehaviour {
         Destroy(gameObject);
 
     }
+    }      
 }

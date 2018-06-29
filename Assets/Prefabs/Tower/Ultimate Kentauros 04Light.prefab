@@ -2195,7 +2195,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1206288713828118}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a33f56e4932902a478d68068b3d425c1, type: 3}
   m_Name: 
@@ -2203,7 +2203,7 @@ MonoBehaviour:
   range: 10
   firerate: 1
   enemytag: Ally
-  bulletprefab: {fileID: 1040870881520456, guid: 5645c34b0ea193f40a09d2ef7548c72a,
+  bulletprefab: {fileID: 1027817519118000, guid: 5645c34b0ea193f40a09d2ef7548c72a,
     type: 2}
   firepoint: {fileID: 4769821189175422}
 --- !u!114 &114917242935967714
