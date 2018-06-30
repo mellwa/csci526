@@ -69,10 +69,15 @@ public class UpgradeTower : MonoBehaviour
             menu.spot.TowerType +=3;
             menu.spot.gameManager.Gold -= (int)(menu.spot.towerPrice*0.8f);
             menu.spot.towerPrice+=(int)(menu.spot.towerPrice*0.8f);
-            if(menu.spot.TowerType>6){
-                menu.MaxTrans.gameObject.SetActive(true);
-                menu.UpgradeTrans.gameObject.SetActive(false);
-            }
+            menu.spot.Ring.enabled=false;
+
+            MenuTrans.gameObject.SetActive(false);
+            menu.spot.gameManager.menuOn =false;
+            menu.spot.localMenuOn =false;
+            // if(menu.spot.TowerType>6){
+            //     menu.MaxTrans.gameObject.SetActive(true);
+            //     menu.UpgradeTrans.gameObject.SetActive(false);
+            // }
         }
     }
 }

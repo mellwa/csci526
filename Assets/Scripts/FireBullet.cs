@@ -39,16 +39,6 @@ public class FireBullet : MonoBehaviour
     }
     void HitTarget()
     {
-        if(nearestenemy.gameObject.tag=="spot"){
-            ShotSpot = nearestenemy.gameObject.GetComponent<PlaceMonster>();
-            ShotSpot.monster.GetComponent<FireTower>().damage = (int)(ShotSpot.monster.GetComponent<FireTower>().damage*0.5);
-
-            Destroy(gameObject);
-
-        }
-        else{
-            //kejin modify:
-            Debug.Log(ShotSpot);
     
         
         Transform healthBarTransform = nearestenemy.transform.Find("HealthBar");
@@ -83,6 +73,6 @@ public class FireBullet : MonoBehaviour
         //Debug.Log("health    " + Healthtrans.localScale);
         // kejin end
         Destroy(gameObject);
-    }
+    
     }      
 }

@@ -15,6 +15,7 @@ public class FireTower : MonoBehaviour
     public GameObject bulletprefab;
     public Transform firepoint;
     public int damage;
+    public float damageScale = 1.0f;
     GameObject target = null;
     // Use this for initialization
     void Start()
@@ -51,6 +52,7 @@ public class FireTower : MonoBehaviour
         if (firecountdown <= 0f)
         {
             Shoot();
+            damageScale = 1.0f;
             firecountdown = 1f / firerate;
         }
         firecountdown -= Time.deltaTime;
@@ -63,7 +65,7 @@ public class FireTower : MonoBehaviour
         if (bullet != null)
         {
             //bullet.Seek(target);
-            bullet.Seekenemy(target,damage);
+            bullet.Seekenemy(target,(int)(damage*damageScale));
         }
 
     }

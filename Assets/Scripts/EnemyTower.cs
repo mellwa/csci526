@@ -15,6 +15,7 @@ public class EnemyTower : MonoBehaviour
     public GameObject bulletprefab;
     public Transform firepoint;
     public int damage;
+    public float debuff;
     GameObject target = null;
     // Use this for initialization
     void Start()
@@ -71,11 +72,11 @@ public class EnemyTower : MonoBehaviour
     {
         //Debug.Log("shoot!");
         GameObject bulletgo = (GameObject)Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
-        FireBullet bullet = bulletgo.GetComponent<FireBullet>();
+        EnemyBullet bullet = bulletgo.GetComponent<EnemyBullet>();
         if (bullet != null)
         {
             //bullet.Seek(target);
-            bullet.Seekenemy(target,damage);
+            bullet.Seekenemy(target,damage,debuff);
         }
 
     }

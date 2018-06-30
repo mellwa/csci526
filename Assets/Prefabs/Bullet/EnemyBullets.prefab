@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4855545228405110}
   - component: {fileID: 212221773252121448}
-  - component: {fileID: 114769930032084482}
+  - component: {fileID: 114569026066410996}
   m_Layer: 0
   m_Name: EnemyBullets
   m_TagString: Untagged
@@ -167,7 +167,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114769930032084482
+--- !u!114 &114569026066410996
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -175,14 +175,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1027817519118000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688b766ddd7b0874492a3fe92c8bad30, type: 3}
+  m_Script: {fileID: 11500000, guid: 00b0f1d9b675f3345b6e1a0c4b0d6fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  damage: 40
-  fireDamageRate: 1
-  woodDamageRate: 1
-  waterDamageRate: 1
 --- !u!212 &212221773252121448
 SpriteRenderer:
   m_ObjectHideFlags: 1

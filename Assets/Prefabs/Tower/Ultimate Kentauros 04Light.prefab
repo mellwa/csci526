@@ -2195,6 +2195,7 @@ MonoBehaviour:
     type: 2}
   firepoint: {fileID: 4769821189175422}
   damage: 40
+  debuff: 1
 --- !u!114 &114632388263530522
 MonoBehaviour:
   m_ObjectHideFlags: 1
