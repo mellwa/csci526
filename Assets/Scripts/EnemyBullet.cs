@@ -9,6 +9,7 @@ public class EnemyBullet : MonoBehaviour
     
 
     private GameObject nearestenemy;
+    private PlaceMonster ShotSpot=null;
     // Update is called once per frame
     public void Seekenemy(GameObject _target)
     {
@@ -36,11 +37,18 @@ public class EnemyBullet : MonoBehaviour
     void HitTarget()
     {
         if(nearestenemy.gameObject.tag=="spot"){
+            ShotSpot = nearestenemy.gameObject.GetComponent<PlaceMonster>();
+            ShotSpot.monster.GetComponent<FireTower>().firerate = 0;
+
             Destroy(gameObject);
 
         }
         else{
             //kejin modify:
+        if (ShotSpot!=null){
+            ShotSpot.monster.GetComponent<FireTower>().firerate = 1;
+        }
+        
         Transform healthBarTransform = nearestenemy.transform.Find("HealthBar");
         HealthBar healthBar = healthBarTransform.gameObject.GetComponent<HealthBar>();
        
@@ -71,8 +79,9 @@ public class EnemyBullet : MonoBehaviour
         }
         //Debug.Log("health    " + Healthtrans.localScale);
         // kejin end
-        Destroy(gameObject);
+        
 
     }
+    
     }      
 }

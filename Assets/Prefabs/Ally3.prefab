@@ -275,6 +275,7 @@ MonoBehaviour:
   speed: 3
   goldEarn: 300
   Healthtrans: {fileID: 4521211494979304}
+  AllyType: 3
 --- !u!212 &212008830461320404
 SpriteRenderer:
   m_ObjectHideFlags: 1

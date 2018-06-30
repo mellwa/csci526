@@ -11,7 +11,7 @@ public class Reinforce : MonoBehaviour {
     void Start () {
         Button btn = this.GetComponent<Button> ();
         btn.onClick.AddListener (OnClick);
-        price =100;
+        
     }
 
     private void OnClick(){

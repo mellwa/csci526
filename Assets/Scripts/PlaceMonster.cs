@@ -35,6 +35,7 @@ public class PlaceMonster : MonoBehaviour
     public Vector3 scaleVec;
     public Vector3 myVector;
     public bool localMenuOn = false;
+    public bool isShot=false;
 
     // Use this for initialization
     void Start()

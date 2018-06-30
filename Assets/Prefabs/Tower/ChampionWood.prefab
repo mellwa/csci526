@@ -504,7 +504,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4058812466488250}
-  - component: {fileID: 114348149074113094}
+  - component: {fileID: 114470341659844076}
   m_Layer: 0
   m_Name: ChampionWood
   m_TagString: Tower
@@ -1011,7 +1011,7 @@ MonoBehaviour:
   no: 
   changeTo: 2
   SpriteTrans: {fileID: 4582359178241034}
---- !u!114 &114348149074113094
+--- !u!114 &114470341659844076
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1019,15 +1019,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972533267559698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fedd859d3ab2094b9e6a87dfc92746a, type: 3}
+  m_Script: {fileID: 11500000, guid: 28f6d6ff9097c0b4da41da357966107b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
+  range: 15
   firerate: 1
   enemytag: Enemy
   bulletprefab: {fileID: 1225511484327240, guid: 4300646db36f8b74787a645c7464b630,
     type: 2}
   firepoint: {fileID: 4957831599706612}
+  damage: 39
+  bulletName: 
 --- !u!114 &114542540917011360
 MonoBehaviour:
   m_ObjectHideFlags: 1

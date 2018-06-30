@@ -244,7 +244,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4679793519715404}
-  - component: {fileID: 114780214759768854}
+  - component: {fileID: 114073267293070262}
   m_Layer: 0
   m_Name: Ultimate Kentauros 04Light
   m_TagString: Tower
@@ -2177,6 +2177,24 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114073267293070262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1206288713828118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33f56e4932902a478d68068b3d425c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 5
+  firerate: 1
+  enemytag: Ally
+  bulletprefab: {fileID: 1027817519118000, guid: 5645c34b0ea193f40a09d2ef7548c72a,
+    type: 2}
+  firepoint: {fileID: 4769821189175422}
+  damage: 40
 --- !u!114 &114632388263530522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2189,23 +2207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   no: 
---- !u!114 &114780214759768854
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1206288713828118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a33f56e4932902a478d68068b3d425c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 10
-  firerate: 1
-  enemytag: Ally
-  bulletprefab: {fileID: 1027817519118000, guid: 5645c34b0ea193f40a09d2ef7548c72a,
-    type: 2}
-  firepoint: {fileID: 4769821189175422}
 --- !u!114 &114917242935967714
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyTower : MonoBehaviour
 {
@@ -15,12 +14,9 @@ public class EnemyTower : MonoBehaviour
     //public Transform parttorotate;
     public GameObject bulletprefab;
     public Transform firepoint;
+    public int damage;
     GameObject target = null;
     // Use this for initialization
-
-    
-
-
     void Start()
     {
         InvokeRepeating("Updatetarget", 0f, 0.5f);
@@ -28,7 +24,7 @@ public class EnemyTower : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Updatetarget()
+   void Updatetarget()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemytag);
         float minimalEnemyDistance = Mathf.Infinity;
@@ -43,6 +39,7 @@ public class EnemyTower : MonoBehaviour
 
             }
         }
+
         if(target == null)
         {
             GameObject[] spots = GameObject.FindGameObjectsWithTag("spot");
@@ -74,11 +71,11 @@ public class EnemyTower : MonoBehaviour
     {
         //Debug.Log("shoot!");
         GameObject bulletgo = (GameObject)Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
-        EnemyBullet bullet = bulletgo.GetComponent<EnemyBullet>();
+        FireBullet bullet = bulletgo.GetComponent<FireBullet>();
         if (bullet != null)
         {
             //bullet.Seek(target);
-            bullet.Seekenemy(target);
+            bullet.Seekenemy(target,damage);
         }
 
     }
@@ -88,6 +85,4 @@ public class EnemyTower : MonoBehaviour
         Gizmos.color = Color.red;
 
     }
-   
 }
-

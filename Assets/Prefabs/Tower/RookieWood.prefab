@@ -188,7 +188,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4012852767557720}
-  - component: {fileID: 114742920823622340}
+  - component: {fileID: 114420436659742790}
   m_Layer: 0
   m_Name: RookieWood
   m_TagString: Tower
@@ -31024,7 +31024,7 @@ MonoBehaviour:
   no: 
   changeTo: 2
   SpriteTrans: {fileID: 4364854732816682}
---- !u!114 &114742920823622340
+--- !u!114 &114420436659742790
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -31032,15 +31032,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1377552214612256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fedd859d3ab2094b9e6a87dfc92746a, type: 3}
+  m_Script: {fileID: 11500000, guid: 28f6d6ff9097c0b4da41da357966107b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 4
+  range: 15
   firerate: 1
   enemytag: Enemy
   bulletprefab: {fileID: 1225511484327240, guid: 4300646db36f8b74787a645c7464b630,
     type: 2}
   firepoint: {fileID: 4112602953247720}
+  damage: 60
+  bulletName: 
 --- !u!137 &137907302343715604
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

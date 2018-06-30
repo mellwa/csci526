@@ -5,14 +5,18 @@ public class FireBullet : MonoBehaviour
 {
     //private Transform target;
     public float speed = 10f;
-    public float damage =40.0f;
-    
-
+   
+    public float fireDamageRate;
+    public float woodDamageRate;
+    public float waterDamageRate;
+    private PlaceMonster ShotSpot=null;
     private GameObject nearestenemy;
+    private int damage;
     // Update is called once per frame
-    public void Seekenemy(GameObject _target)
+    public void Seekenemy(GameObject _target,int _damage)
     {
         nearestenemy = _target;
+        damage = _damage;
     }
     void Update()
     {
@@ -36,11 +40,17 @@ public class FireBullet : MonoBehaviour
     void HitTarget()
     {
         if(nearestenemy.gameObject.tag=="spot"){
+            ShotSpot = nearestenemy.gameObject.GetComponent<PlaceMonster>();
+            ShotSpot.monster.GetComponent<FireTower>().damage = (int)(ShotSpot.monster.GetComponent<FireTower>().damage*0.5);
+
             Destroy(gameObject);
 
         }
         else{
             //kejin modify:
+            Debug.Log(ShotSpot);
+    
+        
         Transform healthBarTransform = nearestenemy.transform.Find("HealthBar");
         HealthBar healthBar = healthBarTransform.gameObject.GetComponent<HealthBar>();
        
@@ -49,13 +59,14 @@ public class FireBullet : MonoBehaviour
             switch (healthBar.elementalTag)
             {
                 case "fire":
-                healthBar.currentHealth -= Mathf.Max(damage, 0);
+                healthBar.currentHealth -= Mathf.Max(damage*fireDamageRate, 0);
+               
                 break;
                 case "water":
-                healthBar.currentHealth -= Mathf.Max(damage*0.6f, 0);
+                healthBar.currentHealth -= Mathf.Max(damage*waterDamageRate, 0);
                 break;
                 case "wood":
-                healthBar.currentHealth -= Mathf.Max(damage*0.6f, 0);
+                healthBar.currentHealth -= Mathf.Max(damage*woodDamageRate, 0);
                 break;
                 default:
                 healthBar.currentHealth -= Mathf.Max(damage, 0);
@@ -72,7 +83,6 @@ public class FireBullet : MonoBehaviour
         //Debug.Log("health    " + Healthtrans.localScale);
         // kejin end
         Destroy(gameObject);
-
     }
     }      
 }

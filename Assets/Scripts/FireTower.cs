@@ -14,6 +14,7 @@ public class FireTower : MonoBehaviour
     //public Transform parttorotate;
     public GameObject bulletprefab;
     public Transform firepoint;
+    public int damage;
     GameObject target = null;
     // Use this for initialization
     void Start()
@@ -62,7 +63,7 @@ public class FireTower : MonoBehaviour
         if (bullet != null)
         {
             //bullet.Seek(target);
-            bullet.Seekenemy(target);
+            bullet.Seekenemy(target,damage);
         }
 
     }
