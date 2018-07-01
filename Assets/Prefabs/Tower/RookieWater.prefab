@@ -248,10 +248,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4338061187470944}
-  - component: {fileID: 114020770947873846}
+  - component: {fileID: 114491296039341812}
   m_Layer: 0
   m_Name: RookieWater
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -881,24 +881,6 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114020770947873846
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1521837444620704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a661750218b05a4692bb82532c689ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 6
-  turnspeed: 5
-  firerate: 2
-  enemytag: Enemy
-  bulletprefab: {fileID: 1281867264817962, guid: 5ca8134cb55524d4192931cac98f485c,
-    type: 2}
-  firepoint: {fileID: 4088541647946074}
 --- !u!114 &114383033208595238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31028,6 +31010,25 @@ MonoBehaviour:
   mMeshColor: {r: 1, g: 1, b: 1, a: 1}
   updateColors: 1
   updatePrefabs: 1
+--- !u!114 &114491296039341812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521837444620704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f6d6ff9097c0b4da41da357966107b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 15
+  firerate: 1
+  enemytag: Enemy
+  bulletprefab: {fileID: 1281867264817962, guid: 5ca8134cb55524d4192931cac98f485c,
+    type: 2}
+  firepoint: {fileID: 4088541647946074}
+  damage: 25
+  bulletName: 
 --- !u!114 &114978814107054586
 MonoBehaviour:
   m_ObjectHideFlags: 1

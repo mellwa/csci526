@@ -9,7 +9,8 @@ private int currentWaypoint = 0;
 private float lastWaypointSwitchTime;
 public float speed = 1.0f;
 public int goldEarn;
-    public Transform Healthtrans;
+public Transform Healthtrans;
+public int AllyType;
 	// Use this for initialization
 void Start () {
 	lastWaypointSwitchTime = Time.time;
@@ -53,6 +54,13 @@ void Update () {
       AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
       GameManagerBehavior gameManager = GameObject.Find("GameManager").GetComponent<GameManagerBehavior>();
       gameManager.Gold += goldEarn;
+      if(AllyType==2){
+        Type2();
+      }
+      if(AllyType==3){
+        gameManager.Health++;
+        
+      }
     }
   }
 }
@@ -85,4 +93,15 @@ public float DistanceToGoal()
   }
   return distance;
 }
+
+private void Type2(){
+  GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+  foreach (GameObject enemy in enemies){
+    enemy.gameObject.GetComponent<MoveEnemy>().speed=enemy.gameObject.GetComponent<MoveEnemy>().speed*0.5f;
+
+  }
+
+}
+
+
 }

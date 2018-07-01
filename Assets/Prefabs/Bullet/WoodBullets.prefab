@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4738778235757474}
   - component: {fileID: 212351642999836398}
-  - component: {fileID: 114079528553206668}
+  - component: {fileID: 114493391229958306}
   m_Layer: 0
   m_Name: WoodBullets
   m_TagString: Untagged
@@ -167,7 +167,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114079528553206668
+--- !u!114 &114493391229958306
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -175,11 +175,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1225511484327240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238805aefef498a45a2fe3a5814ae134, type: 3}
+  m_Script: {fileID: 11500000, guid: 688b766ddd7b0874492a3fe92c8bad30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  damage: 60
+  damage: 40
+  fireDamageRate: 0.6
+  woodDamageRate: 1
+  waterDamageRate: 0.6
 --- !u!212 &212351642999836398
 SpriteRenderer:
   m_ObjectHideFlags: 1

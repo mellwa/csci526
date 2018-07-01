@@ -214,7 +214,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4612724453563462}
-  - component: {fileID: 114645063552534014}
+  - component: {fileID: 114464792531214538}
   m_Layer: 0
   m_Name: MagicianWater
   m_TagString: Tower
@@ -8888,7 +8888,7 @@ MonoBehaviour:
   mMeshColor: {r: 1, g: 1, b: 1, a: 1}
   updateColors: 1
   updatePrefabs: 0
---- !u!114 &114645063552534014
+--- !u!114 &114464792531214538
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -8896,16 +8896,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1269689813952802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a661750218b05a4692bb82532c689ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 28f6d6ff9097c0b4da41da357966107b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 6
-  turnspeed: 5
-  firerate: 2
+  range: 15
+  firerate: 1
   enemytag: Enemy
   bulletprefab: {fileID: 1281867264817962, guid: 5ca8134cb55524d4192931cac98f485c,
     type: 2}
   firepoint: {fileID: 4280427367372602}
+  damage: 39
 --- !u!114 &114650435479088192
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -3,25 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 [System.Serializable]
+public class EnemyList
+ {
+     public GameObject enemyPrefab;
+     public int maxEnemies = 20;
+ }
+[System.Serializable]
 public class Wave
 {
-	public GameObject enemyPrefab;
+	//public GameObject enemyPrefab;
 	public float spawnInterval = 2;
-	public int maxEnemies = 20;
+	public int totalEnemies = 20;
+	public EnemyList[] enemyList;
 }
+
 
 public class SpawnEmeny : MonoBehaviour {
 	public GameObject[] waypoints;
 	public GameObject testEnemyPrefab;
 	public Wave[] waves;
 	public int timeBetweenWaves = 5;
-	
-
-
+	public string lvStars;
 	private GameManagerBehavior gameManager;
 
 	private float lastSpawnTime;
 	private int enemiesSpawned = 0;
+	private int enemiesSpawned2 = 0;
+	private int enemiesType = 0;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -41,18 +50,24 @@ public class SpawnEmeny : MonoBehaviour {
 		float timeInterval = Time.time - lastSpawnTime;
 		float spawnInterval = waves[currentWave].spawnInterval;
 		if (((enemiesSpawned == 0 && timeInterval > timeBetweenWaves) ||
-			timeInterval > spawnInterval) && 
-		enemiesSpawned < waves[currentWave].maxEnemies)
+			  timeInterval > spawnInterval) && 
+		      enemiesSpawned < waves[currentWave].totalEnemies)
 		{
     	// 3  
-    	lastSpawnTime = Time.time;
-    	GameObject newEnemy = (GameObject)
-    	Instantiate(waves[currentWave].enemyPrefab);
-    	newEnemy.GetComponent<MoveEnemy>().waypoints = waypoints;
-    	enemiesSpawned++;
-    }
+    		lastSpawnTime = Time.time;
+    		if(enemiesSpawned2 == waves[currentWave].enemyList[enemiesType].maxEnemies){
+    			enemiesType ++;
+    			enemiesSpawned2=0;
+    		}
+    		GameObject newEnemy = (GameObject)
+    			Instantiate(waves[currentWave].enemyList[enemiesType].enemyPrefab);
+    			newEnemy.GetComponent<MoveEnemy>().waypoints = waypoints;
+    			enemiesSpawned++;
+    			enemiesSpawned2++;
+    	
+    	}
     	// 4 
-    	if (enemiesSpawned == waves[currentWave].maxEnemies &&
+    	if (enemiesSpawned == waves[currentWave].totalEnemies &&
     		GameObject.FindGameObjectWithTag("Enemy") == null)
     	{
     		gameManager.Wave++;
@@ -71,7 +86,12 @@ public class SpawnEmeny : MonoBehaviour {
     	gameManager.gameWonText.gameObject.SetActive(true);
 	    gameManager.BackToMenu.gameObject.SetActive(true);
 	    gameManager.NextLevel.gameObject.SetActive(true);
+
+	    PlayerPrefs.SetInt(lvStars, 1);
+	    
 	    Time.timeScale = 0;
+
+
 
     	}
     	

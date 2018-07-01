@@ -758,7 +758,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4197367167597396}
-  - component: {fileID: 114181453333089324}
+  - component: {fileID: 114297335645616306}
   m_Layer: 0
   m_Name: MagicianWood
   m_TagString: Tower
@@ -1481,7 +1481,7 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114181453333089324
+--- !u!114 &114297335645616306
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1489,16 +1489,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1997360101287462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fedd859d3ab2094b9e6a87dfc92746a, type: 3}
+  m_Script: {fileID: 11500000, guid: 28f6d6ff9097c0b4da41da357966107b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 4
-  turnspeed: 5
+  range: 15
   firerate: 1
   enemytag: Enemy
   bulletprefab: {fileID: 1225511484327240, guid: 4300646db36f8b74787a645c7464b630,
     type: 2}
   firepoint: {fileID: 4484406076822602}
+  damage: 39
 --- !u!114 &114486130470406714
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -180,6 +180,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   damage: 39
+  fireDamageRate: 1
+  woodDamageRate: 0.6
+  waterDamageRate: 0.6
 --- !u!212 &212220591131751498
 SpriteRenderer:
   m_ObjectHideFlags: 1

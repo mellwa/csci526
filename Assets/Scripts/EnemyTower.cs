@@ -1,27 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyTower : MonoBehaviour
 {
-    private Transform target;
+    
     private float firecountdown = 0f;
     [Header("Attributes")]
     public float range = 15f;
-    public float turnspeed = 5f;
     public float firerate = 1f;
     [Header("Setup fields")]
     public string enemytag = "Ally";
     //public Transform parttorotate;
     public GameObject bulletprefab;
     public Transform firepoint;
-    GameObject nearestenemy = null;
+    public int damage;
+    public float debuff;
+    GameObject target = null;
     // Use this for initialization
-
-    
-
-
     void Start()
     {
         InvokeRepeating("Updatetarget", 0f, 0.5f);
@@ -29,24 +25,34 @@ public class EnemyTower : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Updatetarget()
+   void Updatetarget()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemytag);
-        float shortesdistoenemy = Mathf.Infinity;
+        float minimalEnemyDistance = Mathf.Infinity;
 
         foreach (GameObject enemy in enemies)
         {
-            float distancetoenemy = Vector2.Distance(transform.position, enemy.transform.position);
-            if (shortesdistoenemy > distancetoenemy)
-            {
-                shortesdistoenemy = distancetoenemy;
-                nearestenemy = enemy;
+            float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
+            float distanceToGoal = enemy.GetComponent<MoveAllies>().DistanceToGoal();
+            if (distanceToEnemy<= range && distanceToGoal < minimalEnemyDistance){
+                target = enemy;
+                minimalEnemyDistance = distanceToGoal;
+
             }
         }
-        if (nearestenemy != null && shortesdistoenemy <= range)
+
+        if(target == null)
         {
-            target = nearestenemy.transform;
+            GameObject[] spots = GameObject.FindGameObjectsWithTag("spot");
+            foreach (GameObject spot in spots)
+            {
+                float distanceToSpot = Vector2.Distance(transform.position, spot.transform.position);
+                if (distanceToSpot <= range && (spot.GetComponent<PlaceMonster>().TowerType>0)){
+                    target = spot;
+                }
+            }
         }
+        
     }
     void Update()
     {
@@ -66,11 +72,11 @@ public class EnemyTower : MonoBehaviour
     {
         //Debug.Log("shoot!");
         GameObject bulletgo = (GameObject)Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
-        FireBullet bullet = bulletgo.GetComponent<FireBullet>();
+        EnemyBullet bullet = bulletgo.GetComponent<EnemyBullet>();
         if (bullet != null)
         {
             //bullet.Seek(target);
-            bullet.Seekenemy(nearestenemy);
+            bullet.Seekenemy(target,damage,debuff);
         }
 
     }
@@ -80,6 +86,4 @@ public class EnemyTower : MonoBehaviour
         Gizmos.color = Color.red;
 
     }
-   
 }
-
