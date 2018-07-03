@@ -580,7 +580,7 @@ MonoBehaviour:
   - {fileID: 1323516700}
   testAllyPrefab: {fileID: 1313959262149206, guid: 4b6187fadda79e04da1d0a7a9ec9d38d,
     type: 2}
-  price: 0
+  price: 200
 --- !u!114 &181302407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3895,7 +3895,7 @@ MonoBehaviour:
   - {fileID: 1323516700}
   testAllyPrefab: {fileID: 1049030220941264, guid: 83de22418c6ca7f44aa89801b6a5e9f0,
     type: 2}
-  price: 0
+  price: 100
 --- !u!1001 &1862353890
 Prefab:
   m_ObjectHideFlags: 0
