@@ -55,6 +55,8 @@ public class SpawnEmeny : MonoBehaviour {
 		{
     	// 3  
     		lastSpawnTime = Time.time;
+
+                Debug.Log("type: " + enemiesType + " length: " + waves[currentWave].enemyList.Length);
     		if(enemiesSpawned2 == waves[currentWave].enemyList[enemiesType].maxEnemies){
     			enemiesType ++;
     			enemiesSpawned2=0;
@@ -73,6 +75,8 @@ public class SpawnEmeny : MonoBehaviour {
     		gameManager.Wave++;
     		//gameManager.Gold = Mathf.RoundToInt(gameManager.Gold * 1.1f);
     		enemiesSpawned = 0;
+            enemiesSpawned2 = 0;
+            enemiesType = 0;
     		lastSpawnTime = Time.time;
     	}  
     	// 5 
