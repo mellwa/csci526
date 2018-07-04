@@ -273,7 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   speed: 2
-  earnGold: 90
+  earnGold: 80
   Healthtrans: {fileID: 4505150557284366}
 --- !u!212 &212839328409755244
 SpriteRenderer:

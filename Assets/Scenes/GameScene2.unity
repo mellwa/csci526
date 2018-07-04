@@ -2136,72 +2136,54 @@ MonoBehaviour:
   - {fileID: 200798917}
   - {fileID: 1697640302}
   - {fileID: 1563316415}
-  testEnemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
   waves:
   - spawnInterval: 0.9
-    totalEnemies: 3
+    totalEnemies: 7
+    HealthScale: 1
     enemyList:
-    - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
+    - enemyPrefab: {fileID: 1185065637352140, guid: 00dd452e6fdff4f439082eed5b62e2bf,
         type: 2}
-      maxEnemies: 3
-    - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
-        type: 2}
-      maxEnemies: 0
-    - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
-        type: 2}
-      maxEnemies: 0
+      maxEnemies: 7
   - spawnInterval: 1
-    totalEnemies: 10
+    totalEnemies: 9
+    HealthScale: 1
     enemyList:
-    - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
+    - enemyPrefab: {fileID: 1185065637352140, guid: 00dd452e6fdff4f439082eed5b62e2bf,
         type: 2}
       maxEnemies: 4
     - enemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
-      maxEnemies: 6
+      maxEnemies: 5
   - spawnInterval: 0.95
-    totalEnemies: 18
+    totalEnemies: 14
+    HealthScale: 1
     enemyList:
     - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
         type: 2}
-      maxEnemies: 6
+      maxEnemies: 7
     - enemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
-      maxEnemies: 6
-    - enemyPrefab: {fileID: 1185065637352140, guid: 00dd452e6fdff4f439082eed5b62e2bf,
-        type: 2}
-      maxEnemies: 6
+      maxEnemies: 7
   - spawnInterval: 1
-    totalEnemies: 18
+    totalEnemies: 20
+    HealthScale: 1
     enemyList:
     - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
         type: 2}
-      maxEnemies: 6
-    - enemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
-      maxEnemies: 6
+      maxEnemies: 10
     - enemyPrefab: {fileID: 1185065637352140, guid: 00dd452e6fdff4f439082eed5b62e2bf,
         type: 2}
-      maxEnemies: 6
+      maxEnemies: 10
   - spawnInterval: 1
-    totalEnemies: 18
+    totalEnemies: 24
+    HealthScale: 1
     enemyList:
     - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
         type: 2}
-      maxEnemies: 6
-    - enemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
-      maxEnemies: 6
+      maxEnemies: 8
     - enemyPrefab: {fileID: 1185065637352140, guid: 00dd452e6fdff4f439082eed5b62e2bf,
         type: 2}
-      maxEnemies: 6
-  - spawnInterval: 1
-    totalEnemies: 18
-    enemyList:
-    - enemyPrefab: {fileID: 1895241696619926, guid: d42a7ee30ac3f9b4ab638aa29011d86d,
-        type: 2}
-      maxEnemies: 6
+      maxEnemies: 8
     - enemyPrefab: {fileID: 197334, guid: f561f313e37464b2d982d25715bb43cf, type: 2}
-      maxEnemies: 6
-    - enemyPrefab: {fileID: 1185065637352140, guid: 00dd452e6fdff4f439082eed5b62e2bf,
-        type: 2}
-      maxEnemies: 6
+      maxEnemies: 8
   timeBetweenWaves: 5
   lvStars: Level2
 --- !u!4 &926948121
@@ -2886,11 +2868,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4619579639813736, guid: 0f4b0afd126e1364da595914b442deb5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 12.15
       objectReference: {fileID: 0}
     - target: {fileID: 4619579639813736, guid: 0f4b0afd126e1364da595914b442deb5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.2
+      value: -2.05
       objectReference: {fileID: 0}
     - target: {fileID: 4619579639813736, guid: 0f4b0afd126e1364da595914b442deb5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3949,11 +3931,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4619579639813736, guid: 0f4b0afd126e1364da595914b442deb5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.69
+      value: 1.77
       objectReference: {fileID: 0}
     - target: {fileID: 4619579639813736, guid: 0f4b0afd126e1364da595914b442deb5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.77
+      value: -2.21
       objectReference: {fileID: 0}
     - target: {fileID: 4619579639813736, guid: 0f4b0afd126e1364da595914b442deb5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4683,11 +4665,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4679793519715404, guid: 2ed0c578bf826e1489f17f45ce01e2e9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.52
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 4679793519715404, guid: 2ed0c578bf826e1489f17f45ce01e2e9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.8
+      value: -6.35
       objectReference: {fileID: 0}
     - target: {fileID: 4679793519715404, guid: 2ed0c578bf826e1489f17f45ce01e2e9, type: 2}
       propertyPath: m_LocalPosition.z
