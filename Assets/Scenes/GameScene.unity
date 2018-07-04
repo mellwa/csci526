@@ -994,6 +994,7 @@ GameObject:
   - component: {fileID: 254346669}
   - component: {fileID: 254346674}
   - component: {fileID: 254346675}
+  - component: {fileID: 254346676}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1095,7 +1096,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d8191c6189ba447f1a26f200fa4dea14, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1179,6 +1180,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1839735485 &254346676
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 254346668}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
 --- !u!1 &296338595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,6 +2449,11 @@ Prefab:
     - target: {fileID: 1519028754515282, guid: 779de7589be724749bad044af24612e6, type: 2}
       propertyPath: m_TagString
       value: spot
+      objectReference: {fileID: 0}
+    - target: {fileID: 61171538194733894, guid: 779de7589be724749bad044af24612e6,
+        type: 2}
+      propertyPath: m_EdgeRadius
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 779de7589be724749bad044af24612e6, type: 2}
