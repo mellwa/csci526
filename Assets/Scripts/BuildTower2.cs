@@ -49,10 +49,25 @@ public class BuildTower2 : MonoBehaviour
             menu.spot.gameManager.menuOn =false;
             menu.spot.localMenuOn =false;
 
-	    }
+	    }        else{
+            
+            if(Time.timeScale >0){
+                menu.spot.gameManager.insufficientFund.gameObject.SetActive(true);
+               Invoke("Vanish", 1.0f); 
+            }
+            
+        }
 
-	    //TODO:not enough money warning
+        menu.spot.Ring.enabled=false;
+        MenuTrans.gameObject.SetActive(false);
+        menu.spot.gameManager.menuOn =false;
+        menu.spot.localMenuOn =false;
+    }
 
+      void Vanish()
+    {
+        menu.spot.gameManager.insufficientFund.gameObject.SetActive(false);
+        
     }
 
 

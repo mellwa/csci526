@@ -10,6 +10,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Text gameWonText;
 	public Text BeforeStart;
 	public Text Instruction;
+    public Text insufficientFund;
 	private int gold;
 	public bool gameOver = false;
 	private int wave;

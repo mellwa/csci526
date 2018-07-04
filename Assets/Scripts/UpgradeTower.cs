@@ -79,5 +79,26 @@ public class UpgradeTower : MonoBehaviour
             //     menu.UpgradeTrans.gameObject.SetActive(false);
             // }
         }
+        else{
+            
+            if(Time.timeScale >0){
+                menu.spot.gameManager.insufficientFund.gameObject.SetActive(true);
+               Invoke("Vanish", 1.0f); 
+            }
+            
+        }
+
+        menu.spot.Ring.enabled=false;
+        MenuTrans.gameObject.SetActive(false);
+        menu.spot.gameManager.menuOn =false;
+        menu.spot.localMenuOn =false;
+    
+
+
+    }
+    void Vanish()
+    {
+        menu.spot.gameManager.insufficientFund.gameObject.SetActive(false);
+        
     }
 }
