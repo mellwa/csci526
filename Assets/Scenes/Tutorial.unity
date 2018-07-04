@@ -270,7 +270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222.45, y: -86.20001}
+  m_AnchoredPosition: {x: -160.99995, y: -86.1}
   m_SizeDelta: {x: 72.9, y: 61.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &86422711
@@ -412,7 +412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222.45, y: -10.1}
+  m_AnchoredPosition: {x: -161, y: -10}
   m_SizeDelta: {x: 72.9, y: 61.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172237882
@@ -804,7 +804,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -223, y: 66}
+  m_AnchoredPosition: {x: 163.99998, y: 67.1}
   m_SizeDelta: {x: 72.9, y: 61.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &303018435
@@ -1073,7 +1073,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: -113.7}
+  m_AnchoredPosition: {x: 0.000011444092, y: -129}
   m_SizeDelta: {x: 103.7, y: 59.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &483063121
@@ -1108,7 +1108,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Call for Reinforces.
+  m_Text: Call for Reinforcements.
 --- !u!222 &483063122
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1715,8 +1715,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 8.300002}
-  m_SizeDelta: {x: 230.75, y: 175.6}
+  m_AnchoredPosition: {x: -41.33999, y: 0.0000076293945}
+  m_SizeDelta: {x: 295.4, y: 220.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &892004064
 MonoBehaviour:
@@ -1737,9 +1737,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5073b3dd1ef87524ab193b3c9bbfd918, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b687996ed038c42e1953965fa61f6866, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1805,7 +1805,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1ab2c903fef716d44af340646eb6a3b9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c0590fae4159473cb1e92df320fc021, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1936,7 +1936,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 119, y: 57}
+  m_AnchoredPosition: {x: 137, y: -17.2}
   m_SizeDelta: {x: 61.3, y: 64.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1015641970
@@ -1971,7 +1971,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sold this tower and get 50% refund.
+  m_Text: Sell this tower and get 50% refund.
 --- !u!222 &1015641971
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2010,7 +2010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -223, y: -10.100006}
+  m_AnchoredPosition: {x: 164, y: -9}
   m_SizeDelta: {x: 72.9, y: 61.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1042752339
@@ -2078,7 +2078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222.44997, y: 66}
+  m_AnchoredPosition: {x: -160.99998, y: 66.100006}
   m_SizeDelta: {x: 72.9, y: 61.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1122349629
@@ -2146,7 +2146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: -54.1}
+  m_AnchoredPosition: {x: -12, y: -88}
   m_SizeDelta: {x: 309.6, y: 59.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134116046
@@ -2456,11 +2456,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Water Magician
-
-    High Fire Rate
-
-    Powerful To Water Enemy.'
+  m_Text: is Weak to Water Magician
 --- !u!222 &1254174551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2747,7 +2743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -223, y: -86.20001}
+  m_AnchoredPosition: {x: 163.99998, y: -85.10001}
   m_SizeDelta: {x: 72.9, y: 61.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1371289401
@@ -2850,7 +2846,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kill eneny to earn gold.
+  m_Text: Kill enemy to earn gold.
 --- !u!222 &1402225019
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3331,7 +3327,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dont't let the enemy pass here!
+  m_Text: Don't let the enemy pass here!
 --- !u!222 &1743793338
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3618,8 +3614,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 38}
-  m_SizeDelta: {x: 389.6, y: 124.6}
+  m_AnchoredPosition: {x: 20.3, y: 23.425}
+  m_SizeDelta: {x: 414.2, y: 153.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1918753112
 MonoBehaviour:
@@ -3640,9 +3636,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 74e31cb297414894a8b5a642236bb86e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66229d114577c476fa06122cd2b46799, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3672,7 +3668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1925556278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3885,8 +3881,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -40.000015, y: -117}
-  m_SizeDelta: {x: 280, y: 59.6}
+  m_AnchoredPosition: {x: -81.33999, y: -129}
+  m_SizeDelta: {x: 280, y: 61.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1962141009
 MonoBehaviour:
@@ -4035,8 +4031,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -102, y: -84}
-  m_SizeDelta: {x: 72.9, y: 61.1}
+  m_AnchoredPosition: {x: -92.75, y: -97}
+  m_SizeDelta: {x: 45.1, y: 37.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028364825
 MonoBehaviour:
@@ -4138,11 +4134,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Wood Magician
-
-    High Damage
-
-    Powerful To Wood Enemy'
+  m_Text: is Weak to Wood Magician
 --- !u!222 &2054334888
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4216,7 +4208,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Build your tower to defense.
+  m_Text: Build your tower to defend.
 --- !u!222 &2098400296
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4290,9 +4282,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Fire Magician
-
-    Powerful To Fire Enemy.'
+  m_Text: is Weak to Fire Magician
 --- !u!222 &2103378001
 CanvasRenderer:
   m_ObjectHideFlags: 0
