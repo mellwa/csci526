@@ -54,8 +54,8 @@ public class EnemyBullet : MonoBehaviour
         if (healthBar.currentHealth  > 0)
         {
             healthBar.currentHealth -= Mathf.Max(damage, 0);
-            AudioSource audioSource = nearestenemy.GetComponent<AudioSource>();
-            AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
+            //AudioSource audioSource = nearestenemy.GetComponent<AudioSource>();
+            //AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
             
             
         }

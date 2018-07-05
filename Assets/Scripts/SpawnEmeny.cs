@@ -61,7 +61,6 @@ public class SpawnEmeny : MonoBehaviour
                 // 3  
                 lastSpawnTime = Time.time;
 
-                Debug.Log("type: " + enemiesType + " length: " + waves[currentWave].enemyList.Length);
                 if (enemiesSpawned2 == waves[currentWave].enemyList[enemiesType].maxEnemies)
                 {
                     enemiesType++;

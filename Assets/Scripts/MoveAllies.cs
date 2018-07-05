@@ -50,8 +50,8 @@ void Update () {
       // 3.b 
       Destroy(gameObject);
 
-      AudioSource audioSource = gameObject.GetComponent<AudioSource>();
-      AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
+      //AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+      //AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
       GameManagerBehavior gameManager = GameObject.Find("GameManager").GetComponent<GameManagerBehavior>();
       gameManager.Gold += goldEarn;
       if(AllyType==2){

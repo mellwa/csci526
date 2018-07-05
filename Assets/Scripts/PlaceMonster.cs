@@ -27,6 +27,7 @@ public class PlaceMonster : MonoBehaviour
     private Menu menu;
     public GameObject gameManagerObj;
     public GameManagerBehavior gameManager;
+    
 
     public int TowerType;
     public float tower1Range;
@@ -44,7 +45,7 @@ public class PlaceMonster : MonoBehaviour
         towerPrice2= 300;//wood
         towerPrice3= 250;//fire
         tower1Range= 6.0f;
-        tower2Range= 4.0f;
+        tower2Range= 5.0f;
         tower3Range= 5.0f;
 
         Ring = RangeTrans.gameObject.GetComponent<Renderer>();
@@ -68,9 +69,13 @@ public class PlaceMonster : MonoBehaviour
 
     void OnMouseUp()
     {
-    	if ((!gameManager.menuOn) || localMenuOn){
+    	//if ((!gameManager.menuOn) || localMenuOn){
     		MenuTrans.position = transform.position;
     		gameManager.menuOn =true;
+            if(menu.spot!=null){
+               menu.spot.Ring.enabled=false; 
+            }
+            
     		menu.spot =transform.gameObject.GetComponent<PlaceMonster>();
     		menu.SpotTrans =transform;
 
@@ -119,7 +124,7 @@ public class PlaceMonster : MonoBehaviour
 
         	}
 
-    	}
+    	//}
         
     }
 

@@ -65,8 +65,8 @@ public class FireBullet : MonoBehaviour
     
             
             
-            AudioSource audioSource = nearestenemy.GetComponent<AudioSource>();
-            AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
+            //AudioSource audioSource = nearestenemy.GetComponent<AudioSource>();
+            //AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
             
             
         }
