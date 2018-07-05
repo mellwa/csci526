@@ -98,7 +98,17 @@ public class SpawnEmeny : MonoBehaviour
                 gameManager.BackToMenu.gameObject.SetActive(true);
                 gameManager.NextLevel.gameObject.SetActive(true);
 
-                PlayerPrefs.SetInt(lvStars, 1);
+                
+                if(gameManager.Health == 5){
+                 PlayerPrefs.SetInt(lvStars, 3);   
+                }
+                else if(gameManager.Health >= 3){
+                    PlayerPrefs.SetInt(lvStars, 2);
+                }
+                else{
+                    PlayerPrefs.SetInt(lvStars, 1);
+
+                }
 
                 Time.timeScale = 0;
 

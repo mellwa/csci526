@@ -44,12 +44,9 @@ public class ChooseLevelTwo : MonoBehaviour {
         //
         if(PlayerPrefs.GetInt("Level1", 0)>0){
         	 Application.LoadLevel(2);
-        	 Debug.Log (PlayerPrefs.GetInt("Level1", 0));
+        	 
         }
-        else{
-        	//
-        	Debug.Log (PlayerPrefs.GetInt("Level1", 0) +"Lv2 locked.");
-        }
+      
        
     }
 }

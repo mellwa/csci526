@@ -11,7 +11,7 @@ public class ChooseLevelOne : MonoBehaviour {
     }
 
     private void OnClick(){
-        Debug.Log ("Button Clicked. ClickHandler.");
+       
         Application.LoadLevel(1);
     }
 }
