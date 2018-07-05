@@ -4534,7 +4534,7 @@ GameObject:
   - component: {fileID: 1822627886}
   - component: {fileID: 1822627885}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: startInstruction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5408,7 +5408,7 @@ GameObject:
   - component: {fileID: 2106724489}
   - component: {fileID: 2106724488}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: placeInstruction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

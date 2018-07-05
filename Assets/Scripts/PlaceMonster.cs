@@ -69,7 +69,11 @@ public class PlaceMonster : MonoBehaviour
 
     void OnMouseUp()
     {
-    	//if ((!gameManager.menuOn) || localMenuOn){
+        if(gameManager.BeforeStart.gameObject.activeSelf){
+            gameManager.BeforeStart.gameObject.SetActive(false);
+            GameObject.Find("placeInstruction").gameObject.SetActive(false);
+        }
+            
     		MenuTrans.position = transform.position;
     		gameManager.menuOn =true;
             if(menu.spot!=null){
@@ -123,9 +127,7 @@ public class PlaceMonster : MonoBehaviour
         		}
 
         	}
-
-    	//}
-        
+       
     }
 
 
