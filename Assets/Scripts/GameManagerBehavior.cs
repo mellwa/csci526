@@ -11,7 +11,8 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Text BeforeStart;
 	public Text Instruction;
     public Text insufficientFund;
-	private int gold;
+    public Text AllyPassedThrough;
+    private int gold;
 	public bool gameOver = false;
 	private int wave;
 	private int wave2;
@@ -19,6 +20,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Text healthLabel;
 	public GameObject[] healthIndicator;
 	private int health;
+	private int allyNum;
 	public int towerType;
 	public Button Replay;
 	public Button BackToMenu;
@@ -77,14 +79,7 @@ public class GameManagerBehavior : MonoBehaviour {
 		set
 		{
 			wave = value;
-			// if (!gameOver)
-			// {
-			// 	for (int i = 0; i < nextWaveLabels.Length; i++)
-			// 	{
-			// 		nextWaveLabels[i].GetComponent<Animator>().SetTrigger("nextWave");
-			// 	}
-			// }
-			waveLabel.text = "WAVE: " + (wave + 1) +"/"+ GameObject.Find("Road").GetComponent<SpawnEmeny>().waves.Length;;
+			waveLabel.text = "WAVE: " + (wave + 1) +"/"+ GameObject.Find("Road").GetComponent<SpawnEmeny>().waves.Length;
 		}
 	}
 
@@ -97,6 +92,21 @@ public class GameManagerBehavior : MonoBehaviour {
 		set
 		{
 		towerType = value;
+
+			
+		}
+	}
+
+	public int AllyNum
+	{
+		get
+		{
+			return allyNum;
+		}
+		set
+		{
+		allyNum = value;
+		AllyPassedThrough.text = "ALLY PASSED: " + allyNum;
 			
 		}
 	}
@@ -135,6 +145,7 @@ public class GameManagerBehavior : MonoBehaviour {
 		Wave2 = 0;
 		Gold = 1000;
 		Health = 5;
+		AllyNum = 0;
 		TowerType= 0; //no tower is selected
 		Time.timeScale = 0;
 		
