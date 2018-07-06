@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pedia.unity
     guid: ad9cd0036b13d8142a4c66e599416195
+  - enabled: 1
+    path: Assets/Scenes/Tutorial2.unity
+    guid: 7d9fc3350f84da3449658a684758d0a5
+  - enabled: 1
+    path: Assets/Scenes/Tutorial3.unity
+    guid: 5480433e5ada62348a5bebaacf8c9c0c
   m_configObjects: {}

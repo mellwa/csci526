@@ -74,7 +74,7 @@ public class PlaceMonster : MonoBehaviour
             GameObject.Find("placeInstruction").gameObject.SetActive(false);
         }
             
-    		MenuTrans.position = transform.position;
+    		MenuTrans.position = new Vector3(transform.position.x, transform.position.y, -5);
     		gameManager.menuOn =true;
             if(menu.spot!=null){
                menu.spot.Ring.enabled=false; 

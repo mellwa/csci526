@@ -469,7 +469,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a2a16370e76b54141869661bbe71dbe3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb1874e5d2685814bbd11ebea2838eda, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2688,8 +2688,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.827, y: 0.5}
-  m_AnchoredPosition: {x: 42.911, y: 0}
-  m_SizeDelta: {x: -16, y: 50}
+  m_AnchoredPosition: {x: 42.455, y: 0}
+  m_SizeDelta: {x: -15.089, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296153472
 MonoBehaviour:
@@ -2788,7 +2788,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c002faddb6e32684f992c7f3173ff95c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 92e266d3245a6704cb6fef84e4e598af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3078,7 +3078,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4793967229951358, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4793967229951358, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3151,7 +3151,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4ff5fcbe7565eb2409e7542fc3a457bf,
+      objectReference: {fileID: 21300000, guid: 6c434af3ab528a24d9c41aec5be9921e,
         type: 3}
     - target: {fileID: 4428761030071704, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
       propertyPath: m_LocalScale.x
@@ -3285,6 +3285,34 @@ Prefab:
     - target: {fileID: 4553530256188728, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
       propertyPath: m_LocalPosition.y
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208162101201970, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537044050798684, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231496513623598, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898154780828588, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245985411755730, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311302982990740, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430709689851506, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7094ab365b03ae4a860c4719aef4e22, type: 2}
@@ -3852,7 +3880,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cf9d79e54f176ea408903a868261d687, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 53ce530e2cde9d240940e94074036583, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4535,7 +4563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2005634817}
   - component: {fileID: 2005634818}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -43,7 +43,7 @@ public class ChooseLevelTwo : MonoBehaviour {
     private void OnClick(){
         //
         if(PlayerPrefs.GetInt("Level1", 0)>0){
-        	 Application.LoadLevel(2);
+        	 Application.LoadLevel(6);
         	 
         }
       
