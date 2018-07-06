@@ -2188,13 +2188,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33f56e4932902a478d68068b3d425c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
-  firerate: 1
+  range: 7
+  firerate: 1.5
   enemytag: Ally
   bulletprefab: {fileID: 1027817519118000, guid: 5645c34b0ea193f40a09d2ef7548c72a,
     type: 2}
   firepoint: {fileID: 4840575557350478}
-  damage: 40
+  damage: 15
   debuff: 0.5
 --- !u!114 &114641761654669182
 MonoBehaviour:

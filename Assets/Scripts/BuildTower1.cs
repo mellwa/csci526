@@ -39,22 +39,26 @@ public class BuildTower1 : MonoBehaviour
 	        menu.SpotTrans.gameObject.GetComponent<Renderer>().enabled= false;
 	        menu.spot.TowerType=1;
 	        menu.spot.RangeTrans.transform.localScale=new Vector3 (menu.spot.scaleVec.x * menu.spot.tower1Range,menu.spot.scaleVec.y * menu.spot.tower1Range,0);
-	        // menu.Tower1Trans.gameObject.SetActive(false);
-	        // menu.Tower2Trans.gameObject.SetActive(false);
-	        // menu.Tower3Trans.gameObject.SetActive(false);
-	        // menu.SellTrans.gameObject.SetActive(true);
-	        // menu.UpgradeTrans.gameObject.SetActive(true);
+        }
+        else{
+            
+            if(Time.timeScale >0){
+                menu.spot.gameManager.insufficientFund.gameObject.SetActive(true);
+               Invoke("Vanish", 1.0f); 
+            }
+            
+        }
 
-	        menu.spot.Ring.enabled=false;
+        menu.spot.Ring.enabled=false;
+        MenuTrans.gameObject.SetActive(false);
+        menu.spot.gameManager.menuOn =false;
+        menu.spot.localMenuOn =false;
+    }
 
-            MenuTrans.gameObject.SetActive(false);
-            menu.spot.gameManager.menuOn =false;
-            menu.spot.localMenuOn =false;
-
-	    }
-
-	    //TODO:not enough money warning
-
+      void Vanish()
+    {
+        menu.spot.gameManager.insufficientFund.gameObject.SetActive(false);
+        
     }
 
 

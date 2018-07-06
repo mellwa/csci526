@@ -40,7 +40,7 @@ public class ChooseLevelThree : MonoBehaviour {
     private void OnClick(){
         //
         if(PlayerPrefs.GetInt("Level2", 0)>0){
-        	 Application.LoadLevel(3);
+        	 Application.LoadLevel(7);
         }
         else{
         	//

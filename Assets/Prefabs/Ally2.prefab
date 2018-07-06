@@ -258,8 +258,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  speed: 3
-  goldEarn: 300
+  speed: 4
+  goldEarn: 200
   Healthtrans: {fileID: 4282918824173124}
   AllyType: 2
 --- !u!114 &114920068642813884
@@ -273,8 +273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182823cbed0d50246baf6db7ff784586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 120
-  currentHealth: 120
+  maxHealth: 180
+  currentHealth: 180
   elementalTag: 
 --- !u!212 &212013190145675848
 SpriteRenderer:

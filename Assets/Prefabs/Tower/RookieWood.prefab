@@ -31035,14 +31035,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f6d6ff9097c0b4da41da357966107b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 5
   firerate: 1
   enemytag: Enemy
   bulletprefab: {fileID: 1225511484327240, guid: 4300646db36f8b74787a645c7464b630,
     type: 2}
   firepoint: {fileID: 4112602953247720}
   damage: 60
-  bulletName: 
+  damageScale: 1
 --- !u!137 &137907302343715604
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

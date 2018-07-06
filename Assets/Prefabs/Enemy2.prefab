@@ -74,7 +74,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 97d2463062b494cb1ab5c4ede62f719f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   speed: 4
-  earnGold: 90
+  earnGold: 85
   Healthtrans: {fileID: 4966168548485148}
 --- !u!212 &212038095079947848
 SpriteRenderer:
