@@ -27,6 +27,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Button NextLevel;
 	public Button StartButton;
 	public bool menuOn=false;
+	public int AllyPassedGoal =5;
 
 	public int Health
 	{
@@ -47,13 +48,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	    // 3
 	    if (health <= 0 && !gameOver)
 	    {
-	      gameOver = true;
-	      //GameObject gameOverText = GameObject.FindGameObjectWithTag("GameOver");
-	      // gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
-	      gameOverText.gameObject.SetActive(true);
-	      BackToMenu.gameObject.SetActive(true);
-	      Replay.gameObject.SetActive(true);
-	      Time.timeScale = 0;
+	      GameOverStop();
 	    }
 	    // 4 
 	    for (int i = 0; i < healthIndicator.Length; i++)
@@ -79,7 +74,7 @@ public class GameManagerBehavior : MonoBehaviour {
 		set
 		{
 			wave = value;
-			waveLabel.text = "WAVE: " + (wave + 1) +"/"+ GameObject.Find("Road").GetComponent<SpawnEmeny>().waves.Length;
+			waveLabel.text = "WAVE:  " + (wave + 1) +" / "+ GameObject.Find("Road").GetComponent<SpawnEmeny>().waves.Length;
 		}
 	}
 
@@ -106,7 +101,7 @@ public class GameManagerBehavior : MonoBehaviour {
 		set
 		{
 		allyNum = value;
-		AllyPassedThrough.text = "ALLY PASSED: " + allyNum;
+		AllyPassedThrough.text = "ALLY  PASSED:  " + allyNum + " / " + AllyPassedGoal;
 			
 		}
 	}
@@ -155,5 +150,13 @@ public class GameManagerBehavior : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+	public void GameOverStop(){
+		gameOver = true;
+	      gameOverText.gameObject.SetActive(true);
+	      BackToMenu.gameObject.SetActive(true);
+	      Replay.gameObject.SetActive(true);
+	      Time.timeScale = 0;
+
 	}
 }

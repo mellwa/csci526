@@ -95,7 +95,7 @@ public float DistanceToGoal()
 private void Type2(){
   GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
   foreach (GameObject enemy in enemies){
-    enemy.gameObject.GetComponent<MoveEnemy>().speed=enemy.gameObject.GetComponent<MoveEnemy>().speed*0.5f;
+    enemy.gameObject.GetComponent<MoveEnemy>().speed= Mathf.Max(enemy.gameObject.GetComponent<MoveEnemy>().speed*0.5f, 0.5f);
 
   }
 
