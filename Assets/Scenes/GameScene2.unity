@@ -1030,7 +1030,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.7174239
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -3977,7 +3977,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: YOU WIN
+  m_Text: 666, YOU WIN!
 --- !u!222 &1739294792
 CanvasRenderer:
   m_ObjectHideFlags: 0
