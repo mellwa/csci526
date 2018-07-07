@@ -1,0 +1,100 @@
+﻿{
+  "TowerType": {
+    "FireTower": {
+      "Tower_Type": "FireTower",
+      "Price": 250,
+      "Damage": 39,
+      "Range": 5,
+      "FireRate": 1,
+      "FireBug": 1,
+      "WoodBug": 0.6,
+      "WaterBug": 0.6
+    },
+    "WoodTower": {
+      "Tower_Type": "WoodTower",
+      "Price": 300,
+      "Damage": 60,
+      "Range": 4,
+      "FireRate": 1,
+      "FireBug": 0.6,
+      "WoodBug": 1,
+      "WaterBug": 0.6
+    },
+    "WaterTower": {
+      "Tower_Type": "WaterTower",
+      "Price": 400,
+      "Damage": 25,
+      "Range": 6,
+      "FireRate": 2,
+      "FireBug": 0.6,
+      "WoodBug": 0.6,
+      "WaterBug": 1
+    },
+    "DarkTower": {
+      "Tower_Type": "DarkTower",
+      "Price": 0,
+      "Damage": 40,
+      "Range": 5,
+      "FireRate": 1,
+      "FireBug": 0.5,
+      "WoodBug": 0.5,
+      "WaterBug": 0.5
+    },
+    "LightTower": {
+      "Tower_Type": "LightTower",
+      "Price": 0,
+      "Damage": 40,
+      "Range": 5,
+      "FireRate": 1,
+      "FireBug": 0.5,
+      "WoodBug": 0.5,
+      "WaterBug": 0.5
+    }
+  },
+  "ArmyType": {
+    "FireBug": {
+      "Type": "FireBug",
+      "Gold_Earned": 90,
+      "Speed": 2,
+      "Health": 120
+    },
+    "WoodBug": {
+      "Type": "WoodBug",
+      "Gold_Earned": 110,
+      "Speed": 1.5,
+      "Health": 360
+    },
+    "WaterBug": {
+      "Type": "WaterBug",
+      "Gold_Earned": 90,
+      "Speed": 4,
+      "Health": 120
+    },
+    "Bee": {
+      "Type": "Bee",
+      "Gold_Earned": 300,
+      "Speed": 3,
+      "Health": 120
+    }
+  },
+  "Settings": {
+    "Beginner": {
+      "Level": "beginner",
+      "Gold": 2000,
+      "HP": 5,
+      "Waves": 6
+    },
+    "Intermediate": {
+      "Level": "intermediate",
+      "Gold": 2000,
+      "HP": 3,
+      "Waves": 7
+    },
+    "Advanced": {
+      "Level": "advanced",
+      "Gold": 5000,
+      "HP": 1,
+      "Waves": 8
+    }
+  }
+}

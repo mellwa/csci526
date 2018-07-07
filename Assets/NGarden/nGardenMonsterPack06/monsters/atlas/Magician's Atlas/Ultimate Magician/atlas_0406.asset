@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_0406
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 3d85eb52f6127c343a6e227d5bcb42c6, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0.43896484
+    y: 0.63916016
+    width: 0.12646484
+    height: 0.15527344
+  - serializedVersion: 2
+    x: 0.43896484
+    y: 0.7949219
+    width: 0.111816406
+    height: 0.09667969
+  - serializedVersion: 2
+    x: 0.17041016
+    y: 0.8183594
+    width: 0.040527344
+    height: 0.07714844
+  - serializedVersion: 2
+    x: 0.578125
+    y: 0.43408203
+    width: 0.07910156
+    height: 0.061523438
+  - serializedVersion: 2
+    x: 0
+    y: 0.8183594
+    width: 0.16992188
+    height: 0.17382812
+  - serializedVersion: 2
+    x: 0.43896484
+    y: 0.43408203
+    width: 0.13867188
+    height: 0.20458984
+  - serializedVersion: 2
+    x: 0.24365234
+    y: 0.8803711
+    width: 0.11425781
+    height: 0.10644531
+  - serializedVersion: 2
+    x: 0
+    y: 0.6269531
+    width: 0.24316406
+    height: 0.19091797
+  - serializedVersion: 2
+    x: 0.88671875
+    y: 0.1381836
+    width: 0.09033203
+    height: 0.15332031
+  - serializedVersion: 2
+    x: 0.88671875
+    y: 0.2919922
+    width: 0.10205078
+    height: 0.13134766
+  - serializedVersion: 2
+    x: 0.24365234
+    y: 0.6269531
+    width: 0.17089844
+    height: 0.2529297
+  - serializedVersion: 2
+    x: 0.35839844
+    y: 0.8803711
+    width: 0.07763672
+    height: 0.080078125
+  - serializedVersion: 2
+    x: 0.43896484
+    y: 0.89208984
+    width: 0.09375
+    height: 0.06542969
+  - serializedVersion: 2
+    x: 0.21142578
+    y: 0.8183594
+    width: 0.03173828
+    height: 0.06982422
+  - serializedVersion: 2
+    x: 0.88671875
+    y: 0
+    width: 0.10107422
+    height: 0.13769531
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.43847656
+    height: 0.62646484
+  - serializedVersion: 2
+    x: 0.43896484
+    y: 0
+    width: 0.44726562
+    height: 0.43359375
+  textureGUIDs:
+  - 034c65e7bfff2f14cbbf052e8c7b04bd
+  - 04f99a6848a146d4897fbb71b03d178a
+  - 0887793fdeccf8e42a836d59663d7f33
+  - 0907814772a47774c9b79417e70358c2
+  - 20a0fc7d46a62414a95effc063a66338
+  - 3a73b8722b10afd4a94b8e4f6ccf76d5
+  - 3d3ca6342ac853a43a76d81a1f6666d4
+  - 3ea375744cba7fd48aca9f866a72d073
+  - 6a4e0f2f77c57b14a933943845aea4d4
+  - 93f00d8659023de43981401c7fbbf2b4
+  - aa4c20ef6c4213a4783aa35270ef2940
+  - b1a668ba1ab81284db5ff30e74952a7a
+  - c22f80ce5439f9f478afb083aea6e6fe
+  - c4a054e4b568c0242adbcb27c29722eb
+  - c71b899daf5de0447b886b090c5dddd9
+  - f2500c16c2368064ebe17a3cac7f8510
+  - ff385b6d122943549b19c94d155d1a8e
+  textureSizes:
+  - {x: 259, y: 318}
+  - {x: 229, y: 198}
+  - {x: 83, y: 158}
+  - {x: 162, y: 126}
+  - {x: 348, y: 356}
+  - {x: 284, y: 419}
+  - {x: 234, y: 218}
+  - {x: 498, y: 391}
+  - {x: 185, y: 314}
+  - {x: 209, y: 269}
+  - {x: 350, y: 518}
+  - {x: 159, y: 164}
+  - {x: 192, y: 134}
+  - {x: 65, y: 143}
+  - {x: 207, y: 282}
+  - {x: 898, y: 1283}
+  - {x: 916, y: 888}
+  defaultPivotOffsets:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  textureNames:
+  - 07_rLeg1
+  - 03_rUArm
+  - 09_rFoot
+  - 14_lLArm
+  - 06_lBody
+  - 17_manteau2
+  - 10_lLeg1
+  - 05_uBody
+  - 01_rHand
+  - 02_rLArm
+  - 16_manteau1
+  - 15_lUArm
+  - 11_lLeg2
+  - 12_lFoot
+  - 08_rLeg2
+  - 13_lHand
+  - 04_head
+  texturePaths:
+  - Assets/0362_0406/textures/0402_0406/0406/07_rLeg1.png
+  - Assets/0362_0406/textures/0402_0406/0406/03_rUArm.png
+  - Assets/0362_0406/textures/0402_0406/0406/09_rFoot.png
+  - Assets/0362_0406/textures/0402_0406/0406/14_lLArm.png
+  - Assets/0362_0406/textures/0402_0406/0406/06_lBody.png
+  - Assets/0362_0406/textures/0402_0406/0406/17_manteau2.png
+  - Assets/0362_0406/textures/0402_0406/0406/10_lLeg1.png
+  - Assets/0362_0406/textures/0402_0406/0406/05_uBody.png
+  - Assets/0362_0406/textures/0402_0406/0406/01_rHand.png
+  - Assets/0362_0406/textures/0402_0406/0406/02_rLArm.png
+  - Assets/0362_0406/textures/0402_0406/0406/16_manteau1.png
+  - Assets/0362_0406/textures/0402_0406/0406/15_lUArm.png
+  - Assets/0362_0406/textures/0402_0406/0406/11_lLeg2.png
+  - Assets/0362_0406/textures/0402_0406/0406/12_lFoot.png
+  - Assets/0362_0406/textures/0402_0406/0406/08_rLeg2.png
+  - Assets/0362_0406/textures/0402_0406/0406/13_lHand.png
+  - Assets/0362_0406/textures/0402_0406/0406/04_head.png
+  lastBuildID: 20150408114632118
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0
