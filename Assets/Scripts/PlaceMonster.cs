@@ -41,6 +41,7 @@ public class PlaceMonster : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Config config = Config.getInstance();
         towerPrice1= 400;//water
         towerPrice2= 300;//wood
         towerPrice3= 250;//fire

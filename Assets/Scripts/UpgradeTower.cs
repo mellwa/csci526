@@ -74,6 +74,12 @@ public class UpgradeTower : MonoBehaviour
             MenuTrans.gameObject.SetActive(false);
             menu.spot.gameManager.menuOn =false;
             menu.spot.localMenuOn =false;
+            if (Time.timeScale > 0)
+            {
+                menu.spot.gameManager.deductGold.text = "Gold -" + menu.spot.towerPrice;
+                menu.spot.gameManager.insufficientFund.gameObject.SetActive(false);
+                menu.spot.gameManager.deductGold.gameObject.SetActive(true);
+            }
             // if(menu.spot.TowerType>6){
             //     menu.MaxTrans.gameObject.SetActive(true);
             //     menu.UpgradeTrans.gameObject.SetActive(false);
@@ -82,11 +88,12 @@ public class UpgradeTower : MonoBehaviour
         else{
             
             if(Time.timeScale >0){
+                menu.spot.gameManager.deductGold.gameObject.SetActive(false);
                 menu.spot.gameManager.insufficientFund.gameObject.SetActive(true);
-               Invoke("Vanish", 1.0f); 
             }
             
         }
+        Invoke("Vanish", 1.0f); 
 
         menu.spot.Ring.enabled=false;
         MenuTrans.gameObject.SetActive(false);
@@ -99,6 +106,6 @@ public class UpgradeTower : MonoBehaviour
     void Vanish()
     {
         menu.spot.gameManager.insufficientFund.gameObject.SetActive(false);
-        
+        menu.spot.gameManager.deductGold.gameObject.SetActive(false);
     }
 }

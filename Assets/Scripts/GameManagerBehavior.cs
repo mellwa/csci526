@@ -11,6 +11,7 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Text BeforeStart;
 	public Text Instruction;
     public Text insufficientFund;
+    public Text deductGold;
     public Text AllyPassedThrough;
     private int gold;
 	public bool gameOver = false;
@@ -27,7 +28,9 @@ public class GameManagerBehavior : MonoBehaviour {
 	public Button NextLevel;
 	public Button StartButton;
 	public bool menuOn=false;
-	public int AllyPassedGoal =5;
+    public int AllyPassedGoal =5;
+    [Header("Level")]
+    public int gameLevel;
 
 	public int Health
 	{
@@ -135,15 +138,15 @@ public class GameManagerBehavior : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
+    void Start () {
+        Config config = Config.getInstance();
 		Wave = 0;
 		Wave2 = 0;
-		Gold = 1000;
-		Health = 5;
+        Gold = config.getInitGold(this.gameLevel);
+        Health = config.getInitialHealth(this.gameLevel);
 		AllyNum = 0;
 		TowerType= 0; //no tower is selected
 		Time.timeScale = 0;
-		
 		
 	}
 	

@@ -4374,6 +4374,7 @@ MonoBehaviour:
   StartButton: {fileID: 1921718045}
   menuOn: 0
   AllyPassedGoal: 5
+  gameLevel: 3
 --- !u!1001 &1915439172
 Prefab:
   m_ObjectHideFlags: 0
