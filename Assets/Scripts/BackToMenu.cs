@@ -14,6 +14,7 @@ public class BackToMenu : MonoBehaviour {
     private void OnClick(){
         //Debug.Log ("Button Clicked. ClickHandler.");
         Time.timeScale = 1;
+
         Application.LoadLevel(0);
     }
 }
