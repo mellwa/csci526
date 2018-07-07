@@ -66001,13 +66001,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 6
-  firerate: 2
+  firerate: 2.5
   enemytag: Enemy
   bulletprefab: {fileID: 1281867264817962, guid: 5ca8134cb55524d4192931cac98f485c,
     type: 2}
   firepoint: {fileID: 4993159267981562}
-  damage: 35
+  damage: 45
   damageScale: 1
+  towerType: 1
 --- !u!137 &137481089678418840
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

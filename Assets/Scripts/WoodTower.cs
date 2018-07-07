@@ -19,6 +19,9 @@ public class WoodTower : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Updatetarget", 0f, 0.5f);
+        Config config = Config.getInstance();
+        this.range = config.getFireRange(2);
+        this.firerate = config.getFireRate(2);
 
     }
 

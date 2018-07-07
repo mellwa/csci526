@@ -156,10 +156,10 @@ public class GameManagerBehavior : MonoBehaviour {
 	}
 	public void GameOverStop(){
 		gameOver = true;
-	      gameOverText.gameObject.SetActive(true);
-	      BackToMenu.gameObject.SetActive(true);
-	      Replay.gameObject.SetActive(true);
-	      Time.timeScale = 0;
+	    gameOverText.gameObject.SetActive(true);
+	    BackToMenu.gameObject.SetActive(true);
+	    Replay.gameObject.SetActive(true);
+	    Time.timeScale = 0;
 
 	}
 }

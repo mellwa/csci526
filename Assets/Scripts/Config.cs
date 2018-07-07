@@ -78,6 +78,44 @@ public class Config {
         return price;
     }
 
+    public float getFireRange(int type) {
+        float range = 0f;
+        switch(type) {
+            case 1:
+                range = this.gameConfiguration.TowerType.WaterTower.Range;
+                break;
+            case 2:
+                range = this.gameConfiguration.TowerType.WoodTower.Range;
+                break;
+            case 3:
+                range = this.gameConfiguration.TowerType.FireTower.Range;
+                break;
+            default:
+                range = this.gameConfiguration.TowerType.FireTower.Range;
+                break;
+        }
+        return range;
+    }
+
+    public float getFireRate(int type) {
+        float rate = 1;
+        switch(type) {
+            case 1:
+                rate = this.gameConfiguration.TowerType.WaterTower.FireRate;
+                break;
+            case 2:
+                rate = this.gameConfiguration.TowerType.WoodTower.FireRate;
+                break;
+            case 3:
+                rate = this.gameConfiguration.TowerType.FireTower.FireRate;
+                break;
+            default:
+                rate = this.gameConfiguration.TowerType.WaterTower.FireRate;
+                break;
+        }
+        return rate;
+    }
+
     public static Config getInstance() {
 
         return instance;

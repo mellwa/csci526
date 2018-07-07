@@ -4726,7 +4726,7 @@ MonoBehaviour:
   NextLevel: {fileID: 66382558}
   StartButton: {fileID: 1921718045}
   menuOn: 0
-  AllyPassedGoal: 0
+  AllyPassedGoal: 1
   gameLevel: 2
 --- !u!1 &1921718042
 GameObject:

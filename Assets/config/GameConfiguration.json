@@ -92,8 +92,8 @@
     },
     "Advanced": {
       "Level": "advanced",
-      "Gold": 5000,
-      "HP": 1,
+      "Gold": 1000,
+      "HP": 3,
       "Waves": 8
     }
   }
