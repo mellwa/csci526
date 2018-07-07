@@ -49,15 +49,22 @@ public class BuildTower3 : MonoBehaviour
             MenuTrans.gameObject.SetActive(false);
             menu.spot.gameManager.menuOn =false;
             menu.spot.localMenuOn =false;
-
-	    }        else{
+            if (Time.timeScale > 0)
+            {
+                menu.spot.gameManager.deductGold.text = "Gold -" + menu.spot.towerPrice3;
+                menu.spot.gameManager.insufficientFund.gameObject.SetActive(false);
+                menu.spot.gameManager.deductGold.gameObject.SetActive(true);
+            }
+	    }        
+        else{
             
             if(Time.timeScale >0){
+                menu.spot.gameManager.deductGold.gameObject.SetActive(false);
                 menu.spot.gameManager.insufficientFund.gameObject.SetActive(true);
-               Invoke("Vanish", 1.0f); 
             }
             
         }
+        Invoke("Vanish", 1.0f); 
 
         menu.spot.Ring.enabled=false;
         MenuTrans.gameObject.SetActive(false);
@@ -68,6 +75,7 @@ public class BuildTower3 : MonoBehaviour
       void Vanish()
     {
         menu.spot.gameManager.insufficientFund.gameObject.SetActive(false);
+        menu.spot.gameManager.deductGold.gameObject.SetActive(false);
         
     }
 
