@@ -5530,12 +5530,12 @@ Prefab:
         type: 2}
       propertyPath: gameManagerObj
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1908307057}
     - target: {fileID: 114120780588841340, guid: 779de7589be724749bad044af24612e6,
         type: 2}
       propertyPath: MenuTrans
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 252660521}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 779de7589be724749bad044af24612e6, type: 2}
   m_IsPrefabParent: 0
@@ -5736,12 +5736,12 @@ Prefab:
         type: 2}
       propertyPath: gameManagerObj
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1908307057}
     - target: {fileID: 114120780588841340, guid: 779de7589be724749bad044af24612e6,
         type: 2}
       propertyPath: MenuTrans
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 252660521}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 779de7589be724749bad044af24612e6, type: 2}
   m_IsPrefabParent: 0
