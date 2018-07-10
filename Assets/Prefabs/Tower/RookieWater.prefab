@@ -31029,6 +31029,7 @@ MonoBehaviour:
   firepoint: {fileID: 4088541647946074}
   damage: 25
   damageScale: 1
+  towerType: 1
 --- !u!114 &114978814107054586
 MonoBehaviour:
   m_ObjectHideFlags: 1

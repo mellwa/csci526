@@ -259,7 +259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   speed: 4
-  goldEarn: 200
+  goldEarn: 50
   Healthtrans: {fileID: 4282918824173124}
   AllyType: 2
 --- !u!114 &114920068642813884

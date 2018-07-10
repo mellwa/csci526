@@ -80,20 +80,20 @@
   "Settings": {
     "Beginner": {
       "Level": "beginner",
-      "Gold": 2000,
+      "Gold": 800,
       "HP": 5,
       "Waves": 6
     },
     "Intermediate": {
       "Level": "intermediate",
-      "Gold": 2000,
-      "HP": 3,
+      "Gold": 1000,
+      "HP": 5,
       "Waves": 7
     },
     "Advanced": {
       "Level": "advanced",
-      "Gold": 5000,
-      "HP": 1,
+      "Gold": 1000,
+      "HP": 5,
       "Waves": 8
     }
   }

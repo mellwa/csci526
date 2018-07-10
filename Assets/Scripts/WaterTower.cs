@@ -19,7 +19,9 @@ public class WaterTower : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Updatetarget", 0f, 0.5f);
-
+        Config config = Config.getInstance();
+        this.range = config.getFireRange(1);
+        this.firerate = config.getFireRate(1);
     }
 
     // Update is called once per frame

@@ -1028,8 +1028,9 @@ MonoBehaviour:
   bulletprefab: {fileID: 1225511484327240, guid: 4300646db36f8b74787a645c7464b630,
     type: 2}
   firepoint: {fileID: 4957831599706612}
-  damage: 85
+  damage: 70
   damageScale: 1
+  towerType: 2
 --- !u!114 &114542540917011360
 MonoBehaviour:
   m_ObjectHideFlags: 1

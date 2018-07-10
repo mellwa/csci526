@@ -67,8 +67,9 @@ public class UpgradeTower : MonoBehaviour
                 break;
             }
             menu.spot.TowerType +=3;
-            menu.spot.gameManager.Gold -= (int)(menu.spot.towerPrice*0.8f);
-            menu.spot.towerPrice+=(int)(menu.spot.towerPrice*0.8f);
+            int spendingGold = (int)(menu.spot.towerPrice * 0.8f);
+            menu.spot.gameManager.Gold -= spendingGold;
+            menu.spot.towerPrice += spendingGold;
             menu.spot.Ring.enabled=false;
 
             MenuTrans.gameObject.SetActive(false);
@@ -76,7 +77,7 @@ public class UpgradeTower : MonoBehaviour
             menu.spot.localMenuOn =false;
             if (Time.timeScale > 0)
             {
-                menu.spot.gameManager.deductGold.text = "Gold -" + menu.spot.towerPrice;
+                menu.spot.gameManager.deductGold.text = "Gold -" + spendingGold;
                 menu.spot.gameManager.insufficientFund.gameObject.SetActive(false);
                 menu.spot.gameManager.deductGold.gameObject.SetActive(true);
             }

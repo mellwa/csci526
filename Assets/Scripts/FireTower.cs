@@ -17,11 +17,12 @@ public class FireTower : MonoBehaviour
     public int damage;
     public float damageScale = 1.0f;
     GameObject target = null;
+    public int towerType = 3;
     // Use this for initialization
     void Start()
     {
         InvokeRepeating("Updatetarget", 0f, 0.5f);
-
+        Config config = Config.getInstance();
     }
 
     // Update is called once per frame
